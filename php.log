@@ -1,0 +1,332 @@
+[30-Jul-2015 17:07:22 Europe/Berlin] POSTされてしまった！
+[30-Jul-2015 17:08:44 Europe/Berlin] POSTされてしまった！
+[30-Jul-2015 17:08:44 Europe/Berlin] 入力されていなかった！
+[10-Jun-2016 21:09:41 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:11:39 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:11:39 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 143
+[10-Jun-2016 21:13:44 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:13:45 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:15:45 Asia/Tokyo] PHP Warning:  Illegal string offset 'name' in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 148
+[10-Jun-2016 21:15:45 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 148
+[10-Jun-2016 21:15:45 Asia/Tokyo] PHP Warning:  Illegal string offset 'img' in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 149
+[10-Jun-2016 21:15:45 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 149
+[10-Jun-2016 21:15:45 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 151
+[10-Jun-2016 21:15:50 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:15:50 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:15:50 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:15:54 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:15:54 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:15:54 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:16:40 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:16:40 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:16:40 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:17:07 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:17:07 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:17:07 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:17:46 Asia/Tokyo] PHP Warning:  Illegal string offset 'img' in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 150
+[10-Jun-2016 21:17:46 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 150
+[10-Jun-2016 21:18:15 Asia/Tokyo] PHP Warning:  Illegal string offset 'img' in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 150
+[10-Jun-2016 21:18:15 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 150
+[10-Jun-2016 21:19:40 Asia/Tokyo] PHP Warning:  Illegal string offset 'img' in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 150
+[10-Jun-2016 21:19:40 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 150
+[10-Jun-2016 21:19:44 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:19:44 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:19:44 Asia/Tokyo] PHP Notice:  Undefined variable: monsters in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 50
+[10-Jun-2016 21:20:22 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:20:28 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:20:30 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:20:32 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:20:32 Asia/Tokyo] PHP Warning:  Illegal string offset 'img' in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 151
+[10-Jun-2016 21:20:32 Asia/Tokyo] PHP Notice:  Uninitialized string offset: 0 in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 151
+[10-Jun-2016 21:23:08 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:23:08 Asia/Tokyo] PHP Notice:  Undefined index: img in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 153
+[10-Jun-2016 21:23:11 Asia/Tokyo] PHP Notice:  Undefined index: img in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 153
+[10-Jun-2016 21:23:23 Asia/Tokyo] PHP Notice:  Undefined index: img in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 153
+[10-Jun-2016 21:23:49 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:23:54 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:23:54 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:01 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:01 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:02 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:02 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:03 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:03 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:04 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:04 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:05 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:05 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:23 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:23 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:25 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:25 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:26 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:26 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:24:27 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:24:27 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:25:48 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:25:48 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:25:53 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:25:53 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:25:54 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:25:54 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:26:33 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:26:33 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 79
+[10-Jun-2016 21:29:34 Asia/Tokyo] PHP Notice:  Undefined index: img in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 159
+[10-Jun-2016 21:30:30 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:30:30 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:30:30 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:30:30 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:31:02 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:31:02 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:31:02 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:31:02 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:31:26 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:31:26 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:31:26 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:31:26 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:31:57 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:31:57 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:31:57 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:31:57 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:31:57 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:12 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:12 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:12 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:12 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:15 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:15 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:15 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:15 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:17 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:17 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:17 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:17 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:18 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:18 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:18 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:18 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:19 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:19 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:19 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:19 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:44 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:44 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:44 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:44 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:45 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:45 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:45 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:45 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:46 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:46 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:46 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:46 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:47 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:47 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:47 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:47 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:47 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:47 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:47 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:47 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:48 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:48 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:48 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:48 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:49 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:49 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:49 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:49 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:51 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:51 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:51 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:51 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:33:57 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:33:57 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:33:57 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:33:57 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:34:12 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:34:12 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:34:12 Asia/Tokyo] 60ポイントのダメージを与えた！
+[10-Jun-2016 21:34:12 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 83
+[10-Jun-2016 21:34:12 Asia/Tokyo] を倒した！
+[10-Jun-2016 21:34:12 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:34:12 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 85
+[10-Jun-2016 21:35:36 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:36 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:35:36 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:35:36 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:35:37 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:38 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:38 Asia/Tokyo] 59ポイントのダメージを与えた！
+[10-Jun-2016 21:35:40 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:40 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:40 Asia/Tokyo] 77ポイントのダメージを与えた！
+[10-Jun-2016 21:35:40 Asia/Tokyo] 毒ハンドを倒した！
+[10-Jun-2016 21:35:40 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:35:40 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 85
+[10-Jun-2016 21:35:41 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:41 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:41 Asia/Tokyo] 98ポイントのダメージを与えた！
+[10-Jun-2016 21:35:42 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:42 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:42 Asia/Tokyo] 87ポイントのダメージを与えた！
+[10-Jun-2016 21:35:42 Asia/Tokyo] スカルフェイスを倒した！
+[10-Jun-2016 21:35:42 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:35:42 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 85
+[10-Jun-2016 21:35:43 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:43 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:43 Asia/Tokyo] 97ポイントのダメージを与えた！
+[10-Jun-2016 21:35:44 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:44 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:44 Asia/Tokyo] 95ポイントのダメージを与えた！
+[10-Jun-2016 21:35:44 Asia/Tokyo] 毒ハンドを倒した！
+[10-Jun-2016 21:35:44 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:35:44 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 85
+[10-Jun-2016 21:35:45 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:45 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:45 Asia/Tokyo] 70ポイントのダメージを与えた！
+[10-Jun-2016 21:35:45 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:45 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:45 Asia/Tokyo] 84ポイントのダメージを与えた！
+[10-Jun-2016 21:35:45 Asia/Tokyo] フランケンを倒した！
+[10-Jun-2016 21:35:45 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:35:45 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 85
+[10-Jun-2016 21:35:46 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:46 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:46 Asia/Tokyo] 70ポイントのダメージを与えた！
+[10-Jun-2016 21:35:47 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:47 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:47 Asia/Tokyo] 96ポイントのダメージを与えた！
+[10-Jun-2016 21:35:48 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:48 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:48 Asia/Tokyo] 94ポイントのダメージを与えた！
+[10-Jun-2016 21:35:49 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:49 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:49 Asia/Tokyo] 61ポイントのダメージを与えた！
+[10-Jun-2016 21:35:50 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:35:50 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:35:50 Asia/Tokyo] 55ポイントのダメージを与えた！
+[10-Jun-2016 21:35:50 Asia/Tokyo] フランケンNEOを倒した！
+[10-Jun-2016 21:35:50 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:35:50 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 85
+[10-Jun-2016 21:37:12 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:37:12 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:37:12 Asia/Tokyo] 58ポイントのダメージを与えた！
+[10-Jun-2016 21:37:12 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:37:12 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:37:12 Asia/Tokyo] 74ポイントのダメージを与えた！
+[10-Jun-2016 21:37:13 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:37:13 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:37:13 Asia/Tokyo] 79ポイントのダメージを与えた！
+[10-Jun-2016 21:37:13 Asia/Tokyo] ドラキュリーを倒した！
+[10-Jun-2016 21:37:13 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:37:13 Asia/Tokyo] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/framework_lesson01/index.php on line 85
+[10-Jun-2016 21:38:02 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:02 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:38:02 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:38:02 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:38:03 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:04 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:04 Asia/Tokyo] 66ポイントのダメージを与えた！
+[10-Jun-2016 21:38:04 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:04 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:04 Asia/Tokyo] 86ポイントのダメージを与えた！
+[10-Jun-2016 21:38:04 Asia/Tokyo] 毒ハンドを倒した！
+[10-Jun-2016 21:38:04 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:38:05 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:05 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:05 Asia/Tokyo] 92ポイントのダメージを与えた！
+[10-Jun-2016 21:38:06 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:06 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:06 Asia/Tokyo] 60ポイントのダメージを与えた！
+[10-Jun-2016 21:38:06 Asia/Tokyo] 毒ハンドを倒した！
+[10-Jun-2016 21:38:06 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:38:08 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:08 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:08 Asia/Tokyo] 64ポイントのダメージを与えた！
+[10-Jun-2016 21:38:08 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:08 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:08 Asia/Tokyo] 87ポイントのダメージを与えた！
+[10-Jun-2016 21:38:09 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:09 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:09 Asia/Tokyo] 97ポイントのダメージを与えた！
+[10-Jun-2016 21:38:09 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:09 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:09 Asia/Tokyo] 81ポイントのダメージを与えた！
+[10-Jun-2016 21:38:09 Asia/Tokyo] フランケンNEOを倒した！
+[10-Jun-2016 21:38:09 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:38:11 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 95ポイントのダメージを与えた！
+[10-Jun-2016 21:38:11 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 77ポイントのダメージを与えた！
+[10-Jun-2016 21:38:11 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 51ポイントのダメージを与えた！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 血のハンドを倒した！
+[10-Jun-2016 21:38:11 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:38:11 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:11 Asia/Tokyo] 69ポイントのダメージを与えた！
+[10-Jun-2016 21:38:12 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:12 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:12 Asia/Tokyo] 88ポイントのダメージを与えた！
+[10-Jun-2016 21:38:12 Asia/Tokyo] 泥ハンドを倒した！
+[10-Jun-2016 21:38:12 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:38:13 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:13 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:13 Asia/Tokyo] 69ポイントのダメージを与えた！
+[10-Jun-2016 21:38:14 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:14 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:14 Asia/Tokyo] 79ポイントのダメージを与えた！
+[10-Jun-2016 21:38:14 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:14 Asia/Tokyo] 攻撃した！
+[10-Jun-2016 21:38:14 Asia/Tokyo] 61ポイントのダメージを与えた！
+[10-Jun-2016 21:38:14 Asia/Tokyo] ドラキュリーを倒した！
+[10-Jun-2016 21:38:14 Asia/Tokyo] モンスターが出現！
+[10-Jun-2016 21:38:32 Asia/Tokyo] POSTされた！
+[10-Jun-2016 21:38:32 Asia/Tokyo] ゲームスタート！
+[10-Jun-2016 21:38:32 Asia/Tokyo] 初期化します！
+[10-Jun-2016 21:38:32 Asia/Tokyo] モンスターが出現！
+[14-Jun-2016 12:27:27 Asia/Tokyo] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/framework_lesson01_1/index.php on line 189
+[14-Jun-2016 12:27:27 Asia/Tokyo] PHP Notice:  Undefined index: img in /Applications/MAMP/htdocs/framework_lesson01_1/index.php on line 191
+[14-Jun-2016 12:27:27 Asia/Tokyo] PHP Notice:  Undefined index: hp in /Applications/MAMP/htdocs/framework_lesson01_1/index.php on line 193
+[14-Jun-2016 12:27:27 Asia/Tokyo] PHP Notice:  Undefined index: myhp in /Applications/MAMP/htdocs/framework_lesson01_1/index.php on line 195
+[14-Jun-2016 12:28:14 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:28:17 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:28:17 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:28:17 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:28:17 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:32:06 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:32:46 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:32:56 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:01 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:06 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:11 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:25 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:25 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:30 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:38 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:39 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:39 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:40 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:41 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:42 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:43 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:43 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:44 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:44 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:45 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:46 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:33:48 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:44:05 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:53:42 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:53:43 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:53:43 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:53:44 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:53:45 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:53:45 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:53:54 Asia/Tokyo] POSTされた！
+[14-Jun-2016 12:53:55 Asia/Tokyo] POSTされた！
