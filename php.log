@@ -330,3 +330,157 @@
 [14-Jun-2016 12:53:45 Asia/Tokyo] POSTされた！
 [14-Jun-2016 12:53:54 Asia/Tokyo] POSTされた！
 [14-Jun-2016 12:53:55 Asia/Tokyo] POSTされた！
+[14-Apr-2019 07:28:40 UTC] POSTされた！
+[14-Apr-2019 07:28:43 UTC] POSTされた！
+[14-Apr-2019 07:28:44 UTC] POSTされた！
+[14-Apr-2019 07:28:46 UTC] POSTされた！
+[15-Apr-2019 10:22:43 UTC] POSTされた！
+[15-Apr-2019 10:22:43 UTC] PHP Notice:  Undefined index: myhp in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 58
+[15-Apr-2019 10:22:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function creareMonster() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(76): init()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 59
+[15-Apr-2019 10:27:40 UTC] POSTされた！
+[15-Apr-2019 10:27:46 UTC] POSTされた！
+[15-Apr-2019 10:27:52 UTC] POSTされた！
+[15-Apr-2019 10:27:58 UTC] POSTされた！
+[15-Apr-2019 10:28:00 UTC] POSTされた！
+[15-Apr-2019 10:28:02 UTC] POSTされた！
+[15-Apr-2019 10:28:03 UTC] POSTされた！
+[15-Apr-2019 10:28:04 UTC] POSTされた！
+[15-Apr-2019 10:28:05 UTC] POSTされた！
+[15-Apr-2019 10:28:06 UTC] POSTされた！
+[15-Apr-2019 10:28:06 UTC] POSTされた！
+[15-Apr-2019 10:28:07 UTC] POSTされた！
+[15-Apr-2019 10:28:08 UTC] POSTされた！
+[15-Apr-2019 10:28:09 UTC] POSTされた！
+[15-Apr-2019 10:28:09 UTC] POSTされた！
+[15-Apr-2019 10:28:10 UTC] POSTされた！
+[15-Apr-2019 10:28:11 UTC] POSTされた！
+[15-Apr-2019 10:28:12 UTC] POSTされた！
+[15-Apr-2019 10:28:12 UTC] POSTされた！
+[15-Apr-2019 10:28:13 UTC] POSTされた！
+[17-Apr-2019 01:37:21 UTC] POSTされた！
+[17-Apr-2019 01:37:21 UTC] PHP Notice:  Undefined index: history in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 115
+[17-Apr-2019 01:37:21 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:37:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:37:34 UTC] POSTされた！
+[17-Apr-2019 01:37:34 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:37:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:38:38 UTC] POSTされた！
+[17-Apr-2019 01:38:38 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:38:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:44:38 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 223
+[17-Apr-2019 01:44:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:223
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 223
+[17-Apr-2019 01:45:39 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 223
+[17-Apr-2019 01:45:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:223
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 223
+[17-Apr-2019 01:47:28 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 223
+[17-Apr-2019 01:47:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:223
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 223
+[17-Apr-2019 01:50:34 UTC] POSTされた！
+[17-Apr-2019 01:50:37 UTC] POSTされた！
+[17-Apr-2019 01:50:40 UTC] POSTされた！
+[17-Apr-2019 01:50:42 UTC] POSTされた！
+[17-Apr-2019 01:50:51 UTC] POSTされた！
+[17-Apr-2019 01:50:53 UTC] POSTされた！
+[17-Apr-2019 01:50:54 UTC] POSTされた！
+[17-Apr-2019 01:50:58 UTC] POSTされた！
+[17-Apr-2019 01:51:01 UTC] POSTされた！
+[17-Apr-2019 01:51:03 UTC] POSTされた！
+[17-Apr-2019 01:51:05 UTC] POSTされた！
+[17-Apr-2019 01:51:06 UTC] POSTされた！
+[17-Apr-2019 01:51:07 UTC] POSTされた！
+[17-Apr-2019 01:51:07 UTC] POSTされた！
+[17-Apr-2019 01:51:12 UTC] POSTされた！
+[17-Apr-2019 01:51:18 UTC] POSTされた！
+[17-Apr-2019 01:51:38 UTC] POSTされた！
+[17-Apr-2019 01:51:42 UTC] POSTされた！
+[17-Apr-2019 01:51:42 UTC] POSTされた！
+[17-Apr-2019 01:51:43 UTC] POSTされた！
+[17-Apr-2019 01:51:45 UTC] POSTされた！
+[17-Apr-2019 01:51:45 UTC] POSTされた！
+[17-Apr-2019 01:51:46 UTC] POSTされた！
+[17-Apr-2019 01:51:46 UTC] POSTされた！
+[17-Apr-2019 01:51:47 UTC] POSTされた！
+[17-Apr-2019 01:51:48 UTC] POSTされた！
+[17-Apr-2019 01:51:48 UTC] PHP Notice:  Undefined index: history in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 115
+[17-Apr-2019 01:51:48 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:51:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:51:48 UTC] POSTされた！
+[17-Apr-2019 01:51:48 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:51:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:51:58 UTC] POSTされた！
+[17-Apr-2019 01:51:58 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:51:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:52:10 UTC] POSTされた！
+[17-Apr-2019 01:52:10 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:52:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:52:19 UTC] POSTされた！
+[17-Apr-2019 01:52:19 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:52:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:52:43 UTC] POSTされた！
+[17-Apr-2019 01:52:43 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:52:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setHp() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:120
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 120
+[17-Apr-2019 01:52:51 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 223
+[17-Apr-2019 01:52:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:223
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 223
+[17-Apr-2019 01:53:31 UTC] POSTされた！
+[17-Apr-2019 01:53:32 UTC] POSTされた！
+[17-Apr-2019 01:53:33 UTC] POSTされた！
+[17-Apr-2019 01:53:35 UTC] POSTされた！
+[17-Apr-2019 01:53:36 UTC] POSTされた！
+[17-Apr-2019 01:53:37 UTC] POSTされた！
+[17-Apr-2019 01:53:38 UTC] POSTされた！
+[17-Apr-2019 01:53:41 UTC] POSTされた！
+[17-Apr-2019 01:53:44 UTC] POSTされた！
+[17-Apr-2019 01:53:46 UTC] POSTされた！
+[17-Apr-2019 01:53:49 UTC] POSTされた！
+[17-Apr-2019 01:54:23 UTC] POSTされた！
+[17-Apr-2019 01:54:29 UTC] POSTされた！
+[17-Apr-2019 01:54:31 UTC] POSTされた！
+[17-Apr-2019 01:54:32 UTC] POSTされた！
+[17-Apr-2019 01:54:34 UTC] POSTされた！
+[17-Apr-2019 01:54:35 UTC] POSTされた！
+[17-Apr-2019 01:54:35 UTC] POSTされた！
+[17-Apr-2019 01:54:38 UTC] POSTされた！
+[17-Apr-2019 01:54:39 UTC] POSTされた！
+[17-Apr-2019 01:54:41 UTC] POSTされた！
+[17-Apr-2019 01:54:42 UTC] POSTされた！

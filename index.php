@@ -12,10 +12,10 @@ $monsters = array();
 //クラス（設計図）の作成。クラス名の戦闘は大文字で
 class Monster{
 //プロパティ　変数はpublicをつける
-    public $name; // 定義しただけだとnullが入る
-    public $hp;
-    public $img;
-    public $attack = ''; // nullを入れたくない場合、空文字などで初期化する
+    private $name; // 定義しただけだとnullが入る
+    private $hp;
+    private $img;
+    private $attack = ''; // nullを入れたくない場合、空文字などで初期化する
     //コンストラクタも関数（__が目印）
     public function __construct($name, $hp, $img, $attack) {
         //this（自分自身のプロパティ）にアクセスしたい
@@ -29,8 +29,42 @@ class Monster{
         $_SESSION['myhp'] -= $this->attack;
         $_SESSION['history'] .= $this->attack.'ポイントのダメージを受けた！<br>';
     }
+//セッター2つ（setHP, setAttack）
+    public function setHp($num){
+        //セッターを使うことで、直接代入させずにバリデーションチェックを行ってから代入させることができる
+        // FILTER_VALIDATE_INTでint型かどうかを確認（小数点の排除）
+        $this->hp = filter_var($num, FILTER_VALIDATE_INT);
+        //filter_varは値に対して色々なパターンのバリデーションを行える便利関数
+    }
+    public function setAttack($num){
+        //$numには小数点が入る可能性がある。filter_var関数はバリデーションに引っかかると
+        // falseが帰ってきて代入されてしまうので、float型かどうかのバリデーションにしてint型へキャスト.
+        // （falseのままだとattackに、０となり代入されてしまう）
+        // もしくは、FILTER_VALIDATE_FLOATを使う。
+        $this->attack = (int)filter_var($num, FILTER_VALIDATE_FLOAT);
+    }
+//ゲッター4つ（getName, getHp, getImg, getAttack）
+    public function getName(){
+        return $this->name;
+    }
+    public function getHp(){
+        return $this->hp;
+    }
+    public function getImg(){
+        // あとあとでimgが入っていなかったら、no-imgをだそう！となった時でも、クラスを書き換えるだけ！
+        // もしゲッターメソッドを使っていなければ、取得するコードのかしょ全部を修正しなければいけない！
+        // カプセル化をすることで、呼び出す側は「中で何をしているのか」を気にせず、ただ呼び出せばいいだけになる（疎結合）
+        if(empty($this->img)){
+            return 'img/no-img.png';
+        }
+        return $this->img;
+    }
+    public function getAttack(){
+        return $this->attack;
+    }
 }
-//インスタンス生成　それぞれ初期値を入れている。（必ず必要というわけではない）
+
+//インスタンス生成 それぞれ初期値を入れている。（必ず必要というわけではない）
 $monsters[] = new Monster( 'フランケン', 100, 'img/monster01.png', mt_rand(20, 40) );
 $monsters[] = new Monster( 'フランケンNEO', 300, 'img/monster02.png', mt_rand(20, 60) );
 $monsters[] = new Monster( 'ドラキュリー', 200, 'img/monster03.png', mt_rand(30, 50) );
@@ -46,7 +80,8 @@ $monsters[] = new Monster( '血のハンド', 180, 'img/monster08.png', mt_rand(
 function createMonster(){
     global $monsters;
     $monster = $monsters[mt_rand(0, 7)];
-    $_SESSION['history'] .= $monster->name.'が現れた！<br>';
+    // privateなのでnameに直接アクセスできない。そのためゲッターメソッドを使用
+    $_SESSION['history'] .= $monster->getName().'が現れた！<br>';
     // セッションの中にはインスタンスがそのまま入っている
     $_SESSION['monster'] =  $monster;
 }
@@ -82,18 +117,25 @@ if(!empty($_POST)){
             $attackPoint = mt_rand(50,100);
             //hp = hp - attackpoint を-=として省略
             // セッションの中のmonsterのhpを呼び出す
-            $_SESSION['monster']->hp -= $attackPoint;
+            $_SESSION['monster']->setHp( $_SESSION['monster']->getHp() - $attackPoint );
             $_SESSION['history'] .= $attackPoint.'ポイントのダメージを与えた！<br>';
         // モンスターから攻撃を受ける(attackメソッドを使用する)
-            $_SESSION['monster']->attack();
+            //10分の１の確率でモンスターのクリティカル
+            // mt_randを否定（！をつける）することでint型がboolean型に変わるので、if(mt_rand(0,9) == $int)としなくても確率の計算ができる。
+            if(!mt_rand(0,3)){ //0の場合だけfalseとなるのでif文の中に入る１〜９まではtrueなので、if以下には入らない
+                $_SESSION['monster']->setAttack($_SESSION['monster']->getAttack()*1.5);
+                $_SESSION['history'] .= $_SESSION['monster']->getName().'のクリティカルヒット!!<br>';
+            }
+            //$_SESSION['monster']->setAttack();
+             $_SESSION['monster']->attack();
 
         // 自分のhpが0以下になったらゲームオーバー
             if($_SESSION['myhp'] <= 0){
                 gameOver();
             }else{
                 // 敵のhp（hp）が残っていたら、別のモンスターを出現させる
-                if($_SESSION['monster']->hp <= 0){
-                    $_SESSION['history'] .= $_SESSION['monster']->name.'を倒した！<br>';
+                if($_SESSION['monster']->getHp() <= 0){
+                    $_SESSION['history'] .= $_SESSION['monster']->getName().'を倒した！<br>';
                     createMonster();
                     $_SESSION['knockDownCount'] = $_SESSION['knockDownCount']+1;
                 }
@@ -173,16 +215,17 @@ if(!empty($_POST)){
     <div style="background:black; padding:15px; position:relative;">
         <!-- SESSIONがからの場合はスタート画面へ -->
         <?php if(empty($_SESSION)){ ?>
+            
             <h2 style="margin-top:60px;">GAME START ?</h2>
             <form method="post">
                 <input type="submit" name="start" value="▶ゲームスタート">
             </form>
         <?php }else{ ?>
-            <h2><?php echo $_SESSION['monster']->name.'が現れた!!'; ?></h2>
+            <h2><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
             <div style="height: 150px;">
-                <img src="<?php echo $_SESSION['monster']->img; ?>" style="width:120px; height:auto; margin:40px auto 0 auto; display:block;">
+                <img src="<?php echo $_SESSION['monster']->getImg(); ?>" style="width:120px; height:auto; margin:40px auto 0 auto; display:block;">
             </div>
-            <p style="font-size:14px; text-align:center;">モンスターのHP：<?php echo $_SESSION['monster']->hp; ?></p>
+            <p style="font-size:14px; text-align:center;">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
             <p>倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
             <p>勇者の残りHP：<?php echo $_SESSION['myhp']; ?></p>
             <!-- formタグでボタンを生成 -->
