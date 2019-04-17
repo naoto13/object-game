@@ -11,11 +11,12 @@ define("MY_HP", 500);
 $monsters = array();
 //クラス（設計図）の作成。クラス名の戦闘は大文字で
 class Monster{
-//プロパティ　変数はpublicをつける
-    private $name; // 定義しただけだとnullが入る
-    private $hp;
-    private $img;
-    private $attack = ''; // nullを入れたくない場合、空文字などで初期化する
+//プロパティ　継承先でも使用したいのでセレクタはprotectedにする
+    protected $name; // 定義しただけだとnullが入る
+    protected $hp;
+    protected $img;
+    private $attack;
+    // private $attack = ''; // nullを入れたくない場合、空文字などで初期化する
     //コンストラクタも関数（__が目印）
     public function __construct($name, $hp, $img, $attack) {
         //this（自分自身のプロパティ）にアクセスしたい
@@ -26,8 +27,18 @@ class Monster{
     }
     //attackメソッド(これで使いまわせる)
     public function attack(){
-        $_SESSION['myhp'] -= $this->attack;
-        $_SESSION['history'] .= $this->attack.'ポイントのダメージを受けた！<br>';
+        $attackPoint = $this->attack;
+        //クリティカルはモンスターが行うので、モンスターの方の攻撃メソッドの中に入れた
+        //10分の１の確率でモンスターのクリティカル
+        // mt_randを否定（！をつける）することでint型がboolean型に変わるので、if(mt_rand(0,9) == $int)としなくても確率の計算ができる。
+        //0の場合だけfalseとなるのでif文の中に入る１〜９まではtrueなので、if以下には入らない
+        if(!mt_rand(0,10)){
+            $attackPoint *= 1.5;
+            $attackPoint = (int)$attackPoint;
+            $_SESSION .= $this->getName().'のクリティカルヒット!!<br>';
+        }
+        $_SESSION['myhp'] -= $attackPoint;
+        $_SESSION['history'] .= $attackPoint.'ポイントのダメージを受けた！<br>';
     }
 //セッター2つ（setHP, setAttack）
     public function setHp($num){
@@ -36,14 +47,8 @@ class Monster{
         $this->hp = filter_var($num, FILTER_VALIDATE_INT);
         //filter_varは値に対して色々なパターンのバリデーションを行える便利関数
     }
-    public function setAttack($num){
-        //$numには小数点が入る可能性がある。filter_var関数はバリデーションに引っかかると
-        // falseが帰ってきて代入されてしまうので、float型かどうかのバリデーションにしてint型へキャスト.
-        // （falseのままだとattackに、０となり代入されてしまう）
-        // もしくは、FILTER_VALIDATE_FLOATを使う。
-        $this->attack = (int)filter_var($num, FILTER_VALIDATE_FLOAT);
-    }
-//ゲッター4つ（getName, getHp, getImg, getAttack）
+
+//ゲッター（getName, getHp, getImg, getAttack）
     public function getName(){
         return $this->name;
     }
@@ -63,12 +68,32 @@ class Monster{
         return $this->attack;
     }
 }
+//魔法を使えるモンスタークラス（継承）
+class MagicMonster extends Monster{
+    private $magicAttack;
+    //継承しているのでこのクラスで宣言していないもの（magicAttack）以外を呼び出せる
+    function __constract($name, $hp, $img, $attack, $magicAttack){
+        //親クラスのコンストラクタで処理する内容を継承したい場合には親コンストラクタを呼び出す
+        parent::__construct($name, $hp, $img, $attack);
+        $this->magicAttack = $magicAttack;
+    }
+    public function getMagicAttack(){
+        return $this->magicAttack;
+    }
+    //セッターゲッターなども引き継がれている
+    //魔法攻撃力が増えることはない前提として、セッターは作らない
+    public function magicAttack(){
+        $_SESSION['history'] .= $this->name.'の魔法攻撃!!';
+        $_SESSION['myhp'] -= $this->magicAttack;
+        $_SESSION['history'] .= $this->magicAttack.'ポイントのダメージを受けた<br>!!';
+    }
+}
 
 //インスタンス生成 それぞれ初期値を入れている。（必ず必要というわけではない）
 $monsters[] = new Monster( 'フランケン', 100, 'img/monster01.png', mt_rand(20, 40) );
-$monsters[] = new Monster( 'フランケンNEO', 300, 'img/monster02.png', mt_rand(20, 60) );
+$monsters[] = new MagicMonster( 'フランケンNEO', 300, 'img/monster02.png', mt_rand(20, 60) );
 $monsters[] = new Monster( 'ドラキュリー', 200, 'img/monster03.png', mt_rand(30, 50) );
-$monsters[] = new Monster( 'ドラキュラ男爵', 400, 'img/monster04.png', mt_rand(50, 80) );
+$monsters[] = new MagicMonster( 'ドラキュラ男爵', 400, 'img/monster04.png', mt_rand(50, 80) );
 $monsters[] = new Monster( 'スカルフェイス', 150, 'img/monster05.png', mt_rand(30, 60) );
 $monsters[] = new Monster( '毒ハンド', 100, 'img/monster06.png', mt_rand(10, 30) );
 $monsters[] = new Monster( '泥ハンド', 120, 'img/monster07.png', mt_rand(20, 30) );
@@ -117,17 +142,20 @@ if(!empty($_POST)){
             $attackPoint = mt_rand(50,100);
             //hp = hp - attackpoint を-=として省略
             // セッションの中のmonsterのhpを呼び出す
+            //ランダムでモンスターに攻撃を与える
             $_SESSION['monster']->setHp( $_SESSION['monster']->getHp() - $attackPoint );
             $_SESSION['history'] .= $attackPoint.'ポイントのダメージを与えた！<br>';
+
         // モンスターから攻撃を受ける(attackメソッドを使用する)
-            //10分の１の確率でモンスターのクリティカル
-            // mt_randを否定（！をつける）することでint型がboolean型に変わるので、if(mt_rand(0,9) == $int)としなくても確率の計算ができる。
-            if(!mt_rand(0,3)){ //0の場合だけfalseとなるのでif文の中に入る１〜９まではtrueなので、if以下には入らない
-                $_SESSION['monster']->setAttack($_SESSION['monster']->getAttack()*1.5);
-                $_SESSION['history'] .= $_SESSION['monster']->getName().'のクリティカルヒット!!<br>';
-            }
-            //$_SESSION['monster']->setAttack();
+            if($_SESSION['monster'] instanceof MagicMonster){ //魔法攻撃の行えるモンスターか
+                if(!mt_rand(0,4)){ //5分の１の確率で魔法攻撃
+                    $_SESSION['monster']->magicAttack();
+                }else{
+                    $_SESSION['monster']->attack();
+                }
+            }else{ //普通のモンスターなら普通の攻撃
              $_SESSION['monster']->attack();
+            }
 
         // 自分のhpが0以下になったらゲームオーバー
             if($_SESSION['myhp'] <= 0){
