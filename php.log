@@ -484,3 +484,51 @@ Stack trace:
 [17-Apr-2019 01:54:39 UTC] POSTされた！
 [17-Apr-2019 01:54:41 UTC] POSTされた！
 [17-Apr-2019 01:54:42 UTC] POSTされた！
+[18-Apr-2019 09:42:55 UTC] POSTされた！
+[18-Apr-2019 09:42:57 UTC] POSTされた！
+[18-Apr-2019 09:42:59 UTC] POSTされた！
+[18-Apr-2019 09:43:00 UTC] POSTされた！
+[18-Apr-2019 09:43:00 UTC] POSTされた！
+[18-Apr-2019 09:43:01 UTC] POSTされた！
+[18-Apr-2019 09:43:02 UTC] POSTされた！
+[18-Apr-2019 09:43:02 UTC] POSTされた！
+[18-Apr-2019 09:43:03 UTC] POSTされた！
+[18-Apr-2019 09:43:04 UTC] POSTされた！
+[18-Apr-2019 09:43:04 UTC] POSTされた！
+[18-Apr-2019 09:43:08 UTC] POSTされた！
+[18-Apr-2019 09:43:11 UTC] POSTされた！
+[18-Apr-2019 09:43:11 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 38
+[18-Apr-2019 09:43:11 UTC] PHP Warning:  Illegal string offset 'myhp' in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 40
+[18-Apr-2019 09:43:11 UTC] PHP Fatal error:  Uncaught Error: Cannot use assign-op operators with string offsets in /Applications/MAMP/htdocs/objective_game/object-game/index.php:40
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(154): Monster->attack()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 40
+[18-Apr-2019 09:54:08 UTC] POSTされた！
+[18-Apr-2019 09:54:16 UTC] POSTされた！
+[18-Apr-2019 09:54:18 UTC] POSTされた！
+[18-Apr-2019 09:54:24 UTC] POSTされた！
+[18-Apr-2019 09:54:26 UTC] POSTされた！
+[18-Apr-2019 09:54:27 UTC] POSTされた！
+[18-Apr-2019 09:54:30 UTC] POSTされた！
+[18-Apr-2019 09:54:32 UTC] POSTされた！
+[18-Apr-2019 09:54:33 UTC] POSTされた！
+[18-Apr-2019 09:54:33 UTC] POSTされた！
+[18-Apr-2019 09:54:33 UTC] POSTされた！
+[18-Apr-2019 09:54:34 UTC] POSTされた！
+[18-Apr-2019 09:54:34 UTC] POSTされた！
+[18-Apr-2019 09:54:34 UTC] POSTされた！
+[18-Apr-2019 09:54:35 UTC] POSTされた！
+[18-Apr-2019 09:54:36 UTC] POSTされた！
+[18-Apr-2019 09:54:36 UTC] POSTされた！
+[18-Apr-2019 09:54:37 UTC] POSTされた！
+[18-Apr-2019 09:54:37 UTC] POSTされた！
+[18-Apr-2019 09:54:37 UTC] POSTされた！
+[18-Apr-2019 09:54:37 UTC] POSTされた！
+[18-Apr-2019 09:54:37 UTC] POSTされた！
+[18-Apr-2019 09:54:49 UTC] POSTされた！
+[18-Apr-2019 09:54:51 UTC] POSTされた！
+[18-Apr-2019 09:54:51 UTC] POSTされた！
+[18-Apr-2019 09:54:53 UTC] POSTされた！
+[18-Apr-2019 09:54:54 UTC] POSTされた！
+[18-Apr-2019 09:54:58 UTC] POSTされた！

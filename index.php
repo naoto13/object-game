@@ -1,6 +1,7 @@
 <!-- full -->
 
 <?php
+
 ini_set('log_errors','on');
 ini_set('error_log','php.log');
 session_start();
@@ -15,7 +16,7 @@ class Monster{
     protected $name; // 定義しただけだとnullが入る
     protected $hp;
     protected $img;
-    private $attack;
+    protected $attack;
     // private $attack = ''; // nullを入れたくない場合、空文字などで初期化する
     //コンストラクタも関数（__が目印）
     public function __construct($name, $hp, $img, $attack) {
@@ -32,10 +33,10 @@ class Monster{
         //10分の１の確率でモンスターのクリティカル
         // mt_randを否定（！をつける）することでint型がboolean型に変わるので、if(mt_rand(0,9) == $int)としなくても確率の計算ができる。
         //0の場合だけfalseとなるのでif文の中に入る１〜９まではtrueなので、if以下には入らない
-        if(!mt_rand(0,10)){
+        if(!mt_rand(0,9)){
             $attackPoint *= 1.5;
             $attackPoint = (int)$attackPoint;
-            $_SESSION .= $this->getName().'のクリティカルヒット!!<br>';
+            $_SESSION['history'] .= $this->getName().'のクリティカルヒット!!<br>';
         }
         $_SESSION['myhp'] -= $attackPoint;
         $_SESSION['history'] .= $attackPoint.'ポイントのダメージを受けた！<br>';
@@ -72,7 +73,7 @@ class Monster{
 class MagicMonster extends Monster{
     private $magicAttack;
     //継承しているのでこのクラスで宣言していないもの（magicAttack）以外を呼び出せる
-    function __constract($name, $hp, $img, $attack, $magicAttack){
+    function __construct($name, $hp, $img, $attack, $magicAttack) {
         //親クラスのコンストラクタで処理する内容を継承したい場合には親コンストラクタを呼び出す
         parent::__construct($name, $hp, $img, $attack);
         $this->magicAttack = $magicAttack;
@@ -83,17 +84,17 @@ class MagicMonster extends Monster{
     //セッターゲッターなども引き継がれている
     //魔法攻撃力が増えることはない前提として、セッターは作らない
     public function magicAttack(){
-        $_SESSION['history'] .= $this->name.'の魔法攻撃!!';
+        $_SESSION['history'] .= $this->name.'の魔法攻撃!!<br>';
         $_SESSION['myhp'] -= $this->magicAttack;
-        $_SESSION['history'] .= $this->magicAttack.'ポイントのダメージを受けた<br>!!';
+        $_SESSION['history'] .= $this->magicAttack.'ポイントのダメージを受けた！<br>';
     }
 }
 
 //インスタンス生成 それぞれ初期値を入れている。（必ず必要というわけではない）
 $monsters[] = new Monster( 'フランケン', 100, 'img/monster01.png', mt_rand(20, 40) );
-$monsters[] = new MagicMonster( 'フランケンNEO', 300, 'img/monster02.png', mt_rand(20, 60) );
+$monsters[] = new MagicMonster( 'フランケンNEO', 300, 'img/monster02.png', mt_rand(20, 60), mt_rand(50, 100) );
 $monsters[] = new Monster( 'ドラキュリー', 200, 'img/monster03.png', mt_rand(30, 50) );
-$monsters[] = new MagicMonster( 'ドラキュラ男爵', 400, 'img/monster04.png', mt_rand(50, 80) );
+$monsters[] = new MagicMonster( 'ドラキュラ男爵', 400, 'img/monster04.png', mt_rand(50, 80), mt_rand(60, 120) );
 $monsters[] = new Monster( 'スカルフェイス', 150, 'img/monster05.png', mt_rand(30, 60) );
 $monsters[] = new Monster( '毒ハンド', 100, 'img/monster06.png', mt_rand(10, 30) );
 $monsters[] = new Monster( '泥ハンド', 120, 'img/monster07.png', mt_rand(20, 30) );
@@ -104,7 +105,7 @@ $monsters[] = new Monster( '血のハンド', 180, 'img/monster08.png', mt_rand(
 // monstarは呼び出された１体。monstersはインスタンス
 function createMonster(){
     global $monsters;
-    $monster = $monsters[mt_rand(0, 7)];
+    $monster =  $monsters[mt_rand(0, 7)];
     // privateなのでnameに直接アクセスできない。そのためゲッターメソッドを使用
     $_SESSION['history'] .= $monster->getName().'が現れた！<br>';
     // セッションの中にはインスタンスがそのまま入っている
@@ -147,8 +148,9 @@ if(!empty($_POST)){
             $_SESSION['history'] .= $attackPoint.'ポイントのダメージを与えた！<br>';
 
         // モンスターから攻撃を受ける(attackメソッドを使用する)
-            if($_SESSION['monster'] instanceof MagicMonster){ //魔法攻撃の行えるモンスターか
-                if(!mt_rand(0,4)){ //5分の１の確率で魔法攻撃
+            $_SESSION['monster']->attack();
+            if($_SESSION['monster'] instanceof MagicMonster){ //魔法攻撃の行えるモンスターなら
+                if(!mt_rand(0,4)){ //5分の1の確率で魔法攻撃
                     $_SESSION['monster']->magicAttack();
                 }else{
                     $_SESSION['monster']->attack();
@@ -264,7 +266,7 @@ if(!empty($_POST)){
             </form>
         <?php } ?>
         <!-- サイドバー -->
-        <div style="position:absolute; right:-300px; top:0; color:black; width: 250px;">
+        <div style="position:absolute; right:-350px; top:0; color:black; width: 300px;">
             <p><?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?></p>
         </div>
     </div>
