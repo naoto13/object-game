@@ -88,18 +88,18 @@ class MagicMonster extends Monster{
     //     $_SESSION['myhp'] -= $this->magicAttack;
     //     $_SESSION['history'] .= $this->magicAttack.'ポイントのダメージを受けた！<br>';
     // }
-    
+
     //Attackメソッドをオーバーライドすることで、「ゲーム進行を管理する処理側」は単にattackメソッドを呼べばいいだけになる
     // 魔法を使えるモンスターは自分で魔法を出すか普通に攻撃するかを判断する
     public function attack(){
         $attackPoint = $this->attack;
-        if(!mt_rand(0,4)){//5分の1の確率で魔法攻撃
+        if(!mt_rand(0,4)){ //5分の1の確率で魔法攻撃
             $_SESSION['history'] .= $this->name.'の魔法攻撃!!<br>';
-            $_SESSION['myhp'] -= $this->magicAttack();
+            $_SESSION['myhp'] -= $this->magicAttack;
             $_SESSION['history'] .= $this->magicAttack.'ポイントのダメージを受けた！<br>';
         }else{
             //通常の攻撃の場合は、親クラスの攻撃メソッドを使うことで
-            //  親クラスの攻撃メソッドが修正されてもMagicMonsterでも反映される（呼んであげるだけ）
+            //親クラスの攻撃メソッドが修正されてもMagicMonsterでも反映される（呼んであげるだけ）
             parent::attack();
         }
     }
@@ -260,7 +260,6 @@ if(!empty($_POST)){
     <div style="background:black; padding:15px; position:relative;">
         <!-- SESSIONがからの場合はスタート画面へ -->
         <?php if(empty($_SESSION)){ ?>
-            
             <h2 style="margin-top:60px;">GAME START ?</h2>
             <form method="post">
                 <input type="submit" name="start" value="▶ゲームスタート">
