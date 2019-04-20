@@ -611,3 +611,126 @@ Stack trace:
 [19-Apr-2019 07:24:00 UTC] POSTされた！
 [19-Apr-2019 07:24:02 UTC] POSTされた！
 [19-Apr-2019 07:24:03 UTC] POSTされた！
+[20-Apr-2019 17:19:24 UTC] POSTされた！
+[20-Apr-2019 17:19:24 UTC] PHP Notice:  Undefined index: human in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 257
+[20-Apr-2019 17:19:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function attack() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:257
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 257
+[20-Apr-2019 17:19:53 UTC] POSTされた！
+[20-Apr-2019 17:19:53 UTC] PHP Notice:  Undefined index: human in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 257
+[20-Apr-2019 17:19:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function attack() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:257
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 257
+[20-Apr-2019 17:20:05 UTC] POSTされた！
+[20-Apr-2019 17:20:05 UTC] PHP Notice:  Undefined index: human in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 257
+[20-Apr-2019 17:20:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function attack() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:257
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 257
+[20-Apr-2019 17:20:21 UTC] POSTされた！
+[20-Apr-2019 17:20:21 UTC] PHP Notice:  Undefined index: human in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 257
+[20-Apr-2019 17:20:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function attack() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:257
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 257
+[20-Apr-2019 17:20:28 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 372
+[20-Apr-2019 17:20:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:372
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 372
+[20-Apr-2019 17:20:41 UTC] POSTされた！
+[20-Apr-2019 17:20:43 UTC] POSTされた！
+[20-Apr-2019 17:20:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Human::sayCry() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:279
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 279
+[20-Apr-2019 17:21:42 UTC] POSTされた！
+[20-Apr-2019 17:21:45 UTC] POSTされた！
+[20-Apr-2019 17:21:48 UTC] POSTされた！
+[20-Apr-2019 17:21:50 UTC] POSTされた！
+[20-Apr-2019 17:21:50 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Human::getName(), 0 passed in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 73 and exactly 1 expected in /Applications/MAMP/htdocs/objective_game/object-game/index.php:39
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(73): Human->getName()
+#1 /Applications/MAMP/htdocs/objective_game/object-game/index.php(257): Human->attack()
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 39
+[20-Apr-2019 17:28:27 UTC] POSTされた！
+[20-Apr-2019 17:28:27 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Human::getName(), 0 passed in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 73 and exactly 1 expected in /Applications/MAMP/htdocs/objective_game/object-game/index.php:39
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(73): Human->getName()
+#1 /Applications/MAMP/htdocs/objective_game/object-game/index.php(258): Human->attack()
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 39
+[20-Apr-2019 17:28:35 UTC] POSTされた！
+[20-Apr-2019 17:28:35 UTC] PHP Notice:  Undefined index: human in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 258
+[20-Apr-2019 17:28:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function attack() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:258
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 258
+[20-Apr-2019 17:28:42 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[20-Apr-2019 17:28:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:374
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[20-Apr-2019 17:28:49 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[20-Apr-2019 17:28:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:374
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[20-Apr-2019 17:28:56 UTC] POSTされた！
+[20-Apr-2019 17:28:58 UTC] POSTされた！
+[20-Apr-2019 17:28:59 UTC] POSTされた！
+[20-Apr-2019 17:29:01 UTC] POSTされた！
+[20-Apr-2019 17:29:03 UTC] POSTされた！
+[20-Apr-2019 17:29:05 UTC] POSTされた！
+[20-Apr-2019 17:29:07 UTC] POSTされた！
+[20-Apr-2019 17:29:09 UTC] POSTされた！
+[20-Apr-2019 17:29:11 UTC] POSTされた！
+[20-Apr-2019 17:29:12 UTC] POSTされた！
+[20-Apr-2019 17:29:14 UTC] POSTされた！
+[20-Apr-2019 17:29:17 UTC] POSTされた！
+[20-Apr-2019 17:29:18 UTC] POSTされた！
+[20-Apr-2019 17:29:21 UTC] POSTされた！
+[20-Apr-2019 17:29:22 UTC] POSTされた！
+[20-Apr-2019 17:29:31 UTC] POSTされた！
+[20-Apr-2019 17:29:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:237
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(285): gameOver()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 237
+[20-Apr-2019 17:31:44 UTC] POSTされた！
+[20-Apr-2019 17:31:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:237
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(285): gameOver()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 237
+[20-Apr-2019 17:31:46 UTC] POSTされた！
+[20-Apr-2019 17:31:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function debug() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:237
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(285): gameOver()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 237
+[20-Apr-2019 17:31:58 UTC] POSTされた！
+[20-Apr-2019 17:31:58 UTC] PHP Notice:  Undefined index: human in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 258
+[20-Apr-2019 17:31:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function attack() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:258
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 258
+[20-Apr-2019 17:31:59 UTC] POSTされた！
+[20-Apr-2019 17:31:59 UTC] PHP Notice:  Undefined index: human in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 258
+[20-Apr-2019 17:31:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function attack() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:258
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 258
+[20-Apr-2019 17:32:02 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[20-Apr-2019 17:32:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:374
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[20-Apr-2019 17:32:04 UTC] PHP Notice:  Undefined index: monster in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[20-Apr-2019 17:32:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /Applications/MAMP/htdocs/objective_game/object-game/index.php:374
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
