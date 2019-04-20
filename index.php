@@ -6,8 +6,6 @@ ini_set('log_errors','on');
 ini_set('error_log','php.log');
 session_start();
 
-// 自分のHP
-define("MY_HP", 500);
 // モンスター達格納用
 $monsters = array();
 //クラス（設計図）の作成。クラス名の先頭は大文字で
@@ -36,7 +34,7 @@ class Human{
     public function setName($str){
         $this->name = $str;
     }
-    public function getName($str){
+    public function getName(){
         return $this->name;
     }
     public function setSex($num){
@@ -236,6 +234,8 @@ function init(){
 function gameOver(){
     // debug('セッションクリアします！');
     $_SESSION = array();
+    createHuman();
+    createMonster();
 }
 
 
@@ -287,6 +287,7 @@ if(!empty($_POST)){
                 // 敵のhp（hp）が残っていたら、別のモンスターを出現させる
                 if($_SESSION['monster']->getHp() <= 0){
                     History::set($_SESSION['monster']->getName().'を倒した！');
+                    History::set('------------------------------------------');
                     createMonster();
                     $_SESSION['knockDownCount'] = $_SESSION['knockDownCount']+1;
                 }
@@ -310,8 +311,9 @@ if(!empty($_POST)){
     <style>
         body{
             margin: 0 auto;
-            padding: 150px;
-            width: 25%;
+            padding: 50px;
+            padding-top: 10px;
+            width: 45%;
             background: #fbfbfa;
             color: white;
         }

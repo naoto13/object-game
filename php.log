@@ -734,3 +734,72 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[20-Apr-2019 17:36:20 UTC] POSTされた！
+[20-Apr-2019 17:37:57 UTC] POSTされた！
+[20-Apr-2019 17:38:22 UTC] POSTされた！
+[20-Apr-2019 17:38:47 UTC] POSTされた！
+[20-Apr-2019 17:38:54 UTC] POSTされた！
+[20-Apr-2019 17:38:55 UTC] POSTされた！
+[20-Apr-2019 17:38:56 UTC] POSTされた！
+[20-Apr-2019 17:38:56 UTC] POSTされた！
+[20-Apr-2019 17:38:57 UTC] POSTされた！
+[20-Apr-2019 17:39:04 UTC] POSTされた！
+[20-Apr-2019 17:39:05 UTC] POSTされた！
+[20-Apr-2019 17:39:06 UTC] POSTされた！
+[20-Apr-2019 17:39:07 UTC] POSTされた！
+[20-Apr-2019 17:39:07 UTC] POSTされた！
+[20-Apr-2019 17:39:08 UTC] POSTされた！
+[20-Apr-2019 17:39:08 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Human::getName(), 0 passed in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 71 and exactly 1 expected in /Applications/MAMP/htdocs/objective_game/object-game/index.php:37
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(71): Human->getName()
+#1 /Applications/MAMP/htdocs/objective_game/object-game/index.php(258): Human->attack()
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 37
+[20-Apr-2019 17:39:08 UTC] POSTされた！
+[20-Apr-2019 17:39:09 UTC] POSTされた！
+[20-Apr-2019 17:39:09 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Human::getName(), 0 passed in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 71 and exactly 1 expected in /Applications/MAMP/htdocs/objective_game/object-game/index.php:37
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(71): Human->getName()
+#1 /Applications/MAMP/htdocs/objective_game/object-game/index.php(258): Human->attack()
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 37
+[20-Apr-2019 17:39:42 UTC] POSTされた！
+[20-Apr-2019 17:39:44 UTC] POSTされた！
+[20-Apr-2019 17:39:45 UTC] POSTされた！
+[20-Apr-2019 17:39:47 UTC] POSTされた！
+[20-Apr-2019 17:39:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Human::getName(), 0 passed in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 71 and exactly 1 expected in /Applications/MAMP/htdocs/objective_game/object-game/index.php:37
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(71): Human->getName()
+#1 /Applications/MAMP/htdocs/objective_game/object-game/index.php(258): Human->attack()
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 37
+[20-Apr-2019 17:41:16 UTC] POSTされた！
+[20-Apr-2019 17:41:23 UTC] POSTされた！
+[20-Apr-2019 17:41:23 UTC] POSTされた！
+[20-Apr-2019 17:41:24 UTC] POSTされた！
+[20-Apr-2019 17:41:25 UTC] POSTされた！
+[20-Apr-2019 17:44:09 UTC] POSTされた！
+[20-Apr-2019 17:44:11 UTC] POSTされた！
+[20-Apr-2019 17:44:11 UTC] POSTされた！
+[20-Apr-2019 17:44:12 UTC] POSTされた！
+[20-Apr-2019 17:44:16 UTC] POSTされた！
+[20-Apr-2019 17:44:18 UTC] POSTされた！
+[20-Apr-2019 17:44:19 UTC] POSTされた！
+[20-Apr-2019 17:44:20 UTC] POSTされた！
+[20-Apr-2019 17:44:20 UTC] POSTされた！
+[20-Apr-2019 17:44:21 UTC] POSTされた！
+[20-Apr-2019 17:44:22 UTC] POSTされた！
+[20-Apr-2019 17:44:22 UTC] POSTされた！
+[20-Apr-2019 17:44:23 UTC] POSTされた！
+[20-Apr-2019 17:44:23 UTC] POSTされた！
+[20-Apr-2019 17:44:23 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 381
+[20-Apr-2019 17:44:25 UTC] POSTされた！
+[20-Apr-2019 17:44:25 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 381
+[20-Apr-2019 17:44:25 UTC] POSTされた！
+[20-Apr-2019 17:44:25 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 292
+[20-Apr-2019 17:44:26 UTC] POSTされた！
+[20-Apr-2019 17:44:26 UTC] POSTされた！
+[20-Apr-2019 17:44:27 UTC] POSTされた！
+[20-Apr-2019 17:45:11 UTC] POSTされた！
+[20-Apr-2019 17:45:12 UTC] POSTされた！
+[20-Apr-2019 17:45:12 UTC] POSTされた！
