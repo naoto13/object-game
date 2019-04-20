@@ -10,7 +10,30 @@ session_start();
 define("MY_HP", 500);
 // モンスター達格納用
 $monsters = array();
-//クラス（設計図）の作成。クラス名の戦闘は大文字で
+//クラス（設計図）の作成。クラス名の先頭は大文字で
+class Sex{
+    const MAN = 1;
+    const WOMAN = 2;
+    const OKAMA = 3;
+}
+//人クラス
+class Human{
+    protected $name;
+    protected $sex;
+    protected $hp;
+    protected $attackMin;
+    protected $attackMax;
+    public function __construct($name, $sex, $hp, $attackMin, $attackMax){
+        $this->name = $name;
+        $this->sex = $sex;
+        $this->hp = $hp;
+        $this->attackMin = $attackMin;
+        $this->attackMax = $attackMax;
+    }
+
+}
+
+
 class Monster{
 //プロパティ　継承先でも使用したいのでセレクタはprotectedにする
     protected $name; // 定義しただけだとnullが入る
