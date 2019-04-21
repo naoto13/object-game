@@ -803,3 +803,31 @@ Stack trace:
 [20-Apr-2019 17:45:11 UTC] POSTされた！
 [20-Apr-2019 17:45:12 UTC] POSTされた！
 [20-Apr-2019 17:45:12 UTC] POSTされた！
+[21-Apr-2019 15:21:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Monster::__construct(), 4 passed in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 213 and exactly 5 expected in /Applications/MAMP/htdocs/objective_game/object-game/index.php:100
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(213): Monster->__construct('\xE3\x83\x95\xE3\x83\xA9\xE3\x83\xB3\xE3\x82\xB1\xE3\x83\xB3', 100, 'img/monster01.p...', 25)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 100
+[21-Apr-2019 15:21:44 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Monster::__construct(), 4 passed in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 213 and exactly 5 expected in /Applications/MAMP/htdocs/objective_game/object-game/index.php:100
+Stack trace:
+#0 /Applications/MAMP/htdocs/objective_game/object-game/index.php(213): Monster->__construct('\xE3\x83\x95\xE3\x83\xA9\xE3\x83\xB3\xE3\x82\xB1\xE3\x83\xB3', 100, 'img/monster01.p...', 26)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 100
+[21-Apr-2019 15:36:02 UTC] POSTされた！
+[21-Apr-2019 15:36:06 UTC] POSTされた！
+[21-Apr-2019 15:36:08 UTC] POSTされた！
+[21-Apr-2019 15:36:08 UTC] POSTされた！
+[21-Apr-2019 15:36:17 UTC] POSTされた！
+[21-Apr-2019 15:36:23 UTC] POSTされた！
+[21-Apr-2019 15:36:24 UTC] POSTされた！
+[21-Apr-2019 15:36:25 UTC] POSTされた！
+[21-Apr-2019 15:36:25 UTC] POSTされた！
+[21-Apr-2019 15:36:26 UTC] POSTされた！
+[21-Apr-2019 15:36:27 UTC] POSTされた！
+[21-Apr-2019 15:36:28 UTC] POSTされた！
+[21-Apr-2019 15:36:29 UTC] POSTされた！
+[21-Apr-2019 15:36:29 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 400
+[21-Apr-2019 15:36:29 UTC] POSTされた！
+[21-Apr-2019 15:36:29 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 400
+[21-Apr-2019 15:36:33 UTC] POSTされた！
+[21-Apr-2019 15:36:33 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 311
