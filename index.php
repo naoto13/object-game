@@ -17,9 +17,9 @@ class Sex{
     const OKAMA = 3;
 }
 
-//抽象クラス（生き物クラス）
-// 各クラスで共通するものを抜き出している。変わらないプロパティは、そのままprotectedで継承先でも使えるように
-//クラスごとに変わるものは抽象メソッドとしてabstract public functionとして定義する
+//抽象クラス（生き物クラス）各クラスで共通するものを抜き出している。
+//  変わらないプロパティは、そのままprotectedで継承先でも使えるように
+//  クラスごとに変わるものは抽象メソッドとしてabstract public functionとして定義する
 abstract class Creature{
     protected $name;
     protected $hp;
@@ -28,31 +28,26 @@ abstract class Creature{
     abstract public function sayCry();
 
     // 共通して使いそうなセッターゲッターを定義
-    public function setName($str){
-        $this->name = $str;
-    }
-    public function getName(){
-        return $this->name;
-    }
-    public function setHp($num){
-        $this->hp = $num;
-    }
-    public function getHp(){
-        return $this->hp;
-    }
+    public function setName($str){ $this->name = $str; }
+    public function getName(){ return $this->name; }
+    public function setHp($num){ $this->hp = $num; }
+    public function getHp(){ return $this->hp; }
+
     // attackは以前までは引数なしattack()で人クラスやモンスタークラスの中に書いていたが
     //   これだと、攻撃する相手がmonster確定なので、混乱して自分を攻撃などができなくなる。
     //   そのためattackには攻撃する相手を引数としてratgetObjとする（疎結合）
     //モンスターも人もクリティカルは1/10で発生し、1.5倍の攻撃力と決まっていれば定義しちゃって良い。
     public function attack($targetObj){
         $attackPoint = mt_rand($this->attackMin, $this->attackMax);
-        // mt_randを否定（！をつける）することでint型がboolean型に変わるので、if(mt_rand(0,9) == $int)としなくても確率の計算ができる。
-        //0の場合だけfalseとなるのでif文の中に入る１〜９まではtrueなので、if以下には入らない
+        //mt_randを否定（！をつける）することでint型がboolean型に変わるので、if(mt_rand(0,9) == $int)としなくても確率の計算ができる。
+        //   0の場合だけfalseとなるのでif文の中に入る１〜９まではtrueなので、if以下には入らない
         if(!mt_rand(0,9)){//10分の１の確率でモンスターのクリティカル
             $attackPoint *= 1.5;
             $attackPoint = (int)$attackPoint;
-            History::set($this->getName().'のクリティカルヒット!!');
+            // History::set($this->getName().'のクリティカルヒット!!');//密結合。attackクラスはHistoryクラスがないと成り立たない状況
+
         }
+        // 攻撃する相手が引数で変わるようになっている
         $targetObj->setHp($targetObj->getHp()-$attackPoint);
         History::set($attackPoint.'ポイントのダメージ！');
     }
@@ -188,8 +183,16 @@ class MagicMonster extends Monster{
 //     }
 // }
 
+//多くのHistoryがsetされていることが前提となり、密結合をしているのでインターフェースを作り、
+// 実装することで、setされてないときにエラーが出るようになり、素早く原因を突き止められる
+interface HistoryInterface{
+    // なんのメソッドが必ずあるのかを確認しやすくなる
+    public static function set($str);
+    public static function clear();
+}
+
 //履歴管理クラス（インスタンス化して複数に増殖させる必要のないクラスなので、静的メンバ（static）にする）
-class History{
+class History implements HistoryInterface{
     // 引数strを履歴に残す
     public static function set($str){
         //セッションhistoryが作られてなければ作る
