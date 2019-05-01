@@ -328,63 +328,11 @@ if(!empty($_POST)){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="html/css" href="reset.css">
+    <link rel="stylesheet" type="html/css" href="style.css">
     <title>ドラクエ</title>
-
-    <style>
-        body{
-            margin: 0 auto;
-            padding: 50px;
-            padding-top: 10px;
-            width: 45%;
-            background: #fbfbfa;
-            color: white;
-        }
-        h1{ color: white; font-size: 20px; text-align: center;}
-        h2{ color: white; font-size: 16px; text-align: center;}
-        form{
-            overflow: hidden;
-        }
-        input[type="text"]{
-            color: #545454;
-            height: 60px;
-            width: 100%;
-            padding: 5px 10px;
-            font-size: 16px;
-            display: block;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-        input[type="password"]{
-            color: #545454;
-            height: 60px;
-            width: 100%;
-            padding: 5px 10px;
-            font-size: 16px;
-            display: block;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-        input[type="submit"]{
-            border: none;
-            padding: 15px 30px;
-            margin-bottom: 15px;
-            background: black;
-            color: white;
-            float: right;
-        }
-        input[type="submit"]:hover{
-            background: #3d3938;
-            cursor: pointer;
-        }
-        a{
-            color: #545454;
-            display: block;
-        }
-        a:hover{
-            text-decoration: none;
-        }
-    </style>
 </head>
+
 <body>
     <h1 style="text-align:center; color:#333;">ゲーム「ドラ◯エ!!」</h1>
     <div style="background:black; padding:15px; position:relative;">
