@@ -198,10 +198,13 @@ class History implements HistoryInterface{
         //セッションhistoryが作られてなければ作る
         if(empty($_SESSION['history'])) $_SESSION['history'] = '';
         //文字列をセッションhistoryへ移動
-        $_SESSION['history'] .= $str.'<br>';
+        // $_SESSION['history'] .= $str.'<br>';
+        $_SESSION['history'] = $str.'<br>'.$_SESSION['history'];
+        // $_SESSION['history_all'] .= $str.'<br>';
     }
     public static function clear(){
         unset($_SESSION['history']);
+        // unset($_SESSION['history_all']);
     }
 }
 
@@ -338,20 +341,20 @@ if(!empty($_POST)){
 </head>
 
 <body>
-    <h1 style="text-align:center; color:#333;">ゲーム「ドラ◯エ!!」</h1>
-    <div style="background:black; padding:15px; position:relative;">
+    <h1 class="title">ゲーム「ドラ◯エ!!」</h1>
+    <div class="game-window">
         <!-- SESSIONがからの場合はスタート画面へ -->
         <?php if(empty($_SESSION)){ ?>
-            <h2 style="margin-top:60px;">GAME START ?</h2>
+            <h2>GAME START ?</h2>
             <form method="post">
                 <input type="submit" name="start" value="▶ゲームスタート">
             </form>
         <?php }else{ ?>
             <h2><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
-            <div style="height: 150px;">
-                <img src="<?php echo $_SESSION['monster']->getImg(); ?>" style="width:120px; height:auto; margin:40px auto 0 auto; display:block;">
+            <div class="monster-image">
+                <img src="<?php echo $_SESSION['monster']->getImg(); ?>">
             </div>
-            <p style="font-size:14px; text-align:center;">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
+            <p class="monster-hp">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
             <p>倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
             <p>勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?></p>
             <!-- formタグでボタンを生成 -->
@@ -361,9 +364,11 @@ if(!empty($_POST)){
                 <input type="submit" name="start" value="▶ゲームリスタート">
             </form>
         <?php } ?>
-        <!-- サイドバー -->
-        <div style="position:absolute; right:-350px; top:0; color:black; width: 300px;">
-            <p><?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?></p>
+        <!-- バー -->
+        <div class="history">
+            <div class="message">
+                <?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?>
+            </div>
         </div>
     </div>
 </body>

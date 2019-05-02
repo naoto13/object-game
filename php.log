@@ -871,3 +871,148 @@ Stack trace:
 [02-May-2019 04:26:13 UTC] POSTされた！
 [02-May-2019 04:26:24 UTC] POSTされた！
 [02-May-2019 04:27:09 UTC] POSTされた！
+[02-May-2019 05:03:24 UTC] POSTされた！
+[02-May-2019 05:10:39 UTC] POSTされた！
+[02-May-2019 05:14:58 UTC] POSTされた！
+[02-May-2019 05:15:44 UTC] POSTされた！
+[02-May-2019 05:18:37 UTC] POSTされた！
+[02-May-2019 05:18:46 UTC] POSTされた！
+[02-May-2019 05:18:54 UTC] POSTされた！
+[02-May-2019 05:19:16 UTC] POSTされた！
+[02-May-2019 05:19:16 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 355
+[02-May-2019 05:21:12 UTC] POSTされた！
+[02-May-2019 05:21:12 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 355
+[02-May-2019 05:21:25 UTC] POSTされた！
+[02-May-2019 05:21:25 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 355
+[02-May-2019 05:30:39 UTC] POSTされた！
+[02-May-2019 05:30:39 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 355
+[02-May-2019 05:33:29 UTC] POSTされた！
+[02-May-2019 05:33:29 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 355
+[02-May-2019 05:34:01 UTC] POSTされた！
+[02-May-2019 05:34:01 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 314
+[02-May-2019 05:34:18 UTC] POSTされた！
+[02-May-2019 05:34:31 UTC] POSTされた！
+[02-May-2019 05:34:42 UTC] POSTされた！
+[02-May-2019 05:34:53 UTC] POSTされた！
+[02-May-2019 05:36:52 UTC] POSTされた！
+[02-May-2019 05:37:21 UTC] POSTされた！
+[02-May-2019 05:37:46 UTC] POSTされた！
+[02-May-2019 05:37:46 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 355
+[02-May-2019 05:37:48 UTC] POSTされた！
+[02-May-2019 05:37:49 UTC] POSTされた！
+[02-May-2019 05:37:50 UTC] POSTされた！
+[02-May-2019 05:37:52 UTC] POSTされた！
+[02-May-2019 05:40:54 UTC] POSTされた！
+[02-May-2019 05:40:57 UTC] POSTされた！
+[02-May-2019 05:40:59 UTC] POSTされた！
+[02-May-2019 05:41:00 UTC] POSTされた！
+[02-May-2019 05:41:01 UTC] POSTされた！
+[02-May-2019 05:41:02 UTC] POSTされた！
+[02-May-2019 05:42:01 UTC] POSTされた！
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:01 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] POSTされた！
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:03 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] POSTされた！
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Notice:  A non well formed numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 202
+[02-May-2019 05:42:34 UTC] POSTされた！
+[02-May-2019 05:42:36 UTC] POSTされた！
+[02-May-2019 05:42:37 UTC] POSTされた！
+[02-May-2019 05:42:55 UTC] POSTされた！
+[02-May-2019 05:42:55 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 05:42:57 UTC] POSTされた！
+[02-May-2019 05:42:57 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 05:42:58 UTC] POSTされた！
+[02-May-2019 05:42:58 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 05:43:03 UTC] POSTされた！
+[02-May-2019 05:43:03 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 317
+[02-May-2019 05:43:05 UTC] POSTされた！
+[02-May-2019 05:43:06 UTC] POSTされた！
+[02-May-2019 05:43:08 UTC] POSTされた！
+[02-May-2019 05:43:09 UTC] POSTされた！
+[02-May-2019 05:43:10 UTC] POSTされた！
+[02-May-2019 06:11:00 UTC] POSTされた！
+[02-May-2019 06:12:33 UTC] POSTされた！
+[02-May-2019 06:13:03 UTC] POSTされた！
+[02-May-2019 06:15:04 UTC] POSTされた！
+[02-May-2019 06:15:04 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 06:15:06 UTC] POSTされた！
+[02-May-2019 06:15:06 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 06:15:09 UTC] POSTされた！
+[02-May-2019 06:15:09 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 06:15:19 UTC] POSTされた！
+[02-May-2019 06:15:19 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 06:19:57 UTC] POSTされた！
+[02-May-2019 06:19:57 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 06:20:26 UTC] POSTされた！
+[02-May-2019 06:20:26 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 317
+[02-May-2019 06:21:24 UTC] POSTされた！
+[02-May-2019 06:21:56 UTC] POSTされた！
+[02-May-2019 06:24:02 UTC] POSTされた！
+[02-May-2019 06:26:30 UTC] POSTされた！
+[02-May-2019 06:26:36 UTC] POSTされた！
+[02-May-2019 06:26:36 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 358
+[02-May-2019 06:26:36 UTC] POSTされた！
+[02-May-2019 06:26:36 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 317
+[02-May-2019 06:26:37 UTC] POSTされた！
+[02-May-2019 06:26:38 UTC] POSTされた！
+[02-May-2019 06:26:39 UTC] POSTされた！
+[02-May-2019 06:26:39 UTC] POSTされた！
+[02-May-2019 06:26:40 UTC] POSTされた！
+[02-May-2019 06:26:41 UTC] POSTされた！
