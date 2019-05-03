@@ -326,6 +326,10 @@ if(!empty($_POST)){
 }
 ?>
 
+<!-- ---------------------------------------------------- -->
+<!-- ここからがHTML -->
+<!-- ---------------------------------------------------- -->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -337,6 +341,7 @@ if(!empty($_POST)){
     <!-- これはだめ -->
     <!-- <link rel="stylesheet" href="/reset.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>ドラクエ</title>
 </head>
 
@@ -351,15 +356,24 @@ if(!empty($_POST)){
             </form>
         <?php }else{ ?>
             <h2><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
+            <p class="monster-hp">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
             <div class="monster-image">
                 <img src="<?php echo $_SESSION['monster']->getImg(); ?>">
             </div>
-            <p class="monster-hp">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
-            <p>倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
-            <p>勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?></p>
+            <p class="hero-hp">勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?></p>
+            
+            <div style="background-color:lightblue; padding:20px 20px 10px;">
+                <!-- <input type="button" id="wkBtn" value="スタート"> -->
+                <div id="wkPg"></div>
+                <div id="wkText" style="bottom:10px;"></div>
+            </div>
+            
+            <p class="monster-count">倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
             <!-- formタグでボタンを生成 -->
             <form method="post">
-                <input type="submit" name="attack" value="▶攻撃する">
+                <input type="submit" name="attack" value="▶通常攻撃">
+                <input type="submit" name="specialAttack" value="▶必殺技">
+                <input type="submit" name="magicalAttack" value="▶魔法攻撃">
                 <input type="submit" name="escape" value="▶逃げる">
                 <input type="submit" name="start" value="▶ゲームリスタート">
             </form>
@@ -372,4 +386,33 @@ if(!empty($_POST)){
         </div>
     </div>
 </body>
+<footer>
+</footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+<!-- 要変更 -->
+<script type="text/javascript">
+    $(function(){
+        $("attack").click(function(){
+            $("#wkPg").progressbar({
+                value: max,
+                // changeはprogressbαrの値が変化した際に発火
+                change: function() {
+                $("#wkText").text($("#wkPg").progressbar("value"));
+                },
+                // completeは最大値に達した時に発生するイベント
+                // complete: function() {
+                // $("#wkText").text($("#wkPg").progressbar("value") + "%　完了");
+                // }
+            });
+            // var id = setInterval(function() {
+            //     var val = $("#wkPg").progressbar("value");
+            //     $("#wkPg").progressbar("value", ++val);
+            //     if (val >= 100) {clearInterval(id)}
+            // }, 10);
+        });
+    });
+</script>
+
 </html>
