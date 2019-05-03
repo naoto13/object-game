@@ -85,6 +85,19 @@ input[type="submit"]:last-child{
 .hero-hp{
     text-align: left;
 }
+/* hp-bar */
+.ui-progressbar{
+    height: 1rem !important;
+}
+.ui-corner-all{
+    border-radius: 6px !important;
+}
+.ui-widget-header{
+    background: rgb(116, 245, 30) !important;
+    height: 1.1rem !important;
+}
+
+
 .monster-count{
     text-align: right;
     font-size: 0.7rem;

@@ -340,8 +340,8 @@ if(!empty($_POST)){
     <!-- <link rel="stylesheet" href="./reset.css"> -->
     <!-- これはだめ -->
     <!-- <link rel="stylesheet" href="/reset.css"> -->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
     <title>ドラクエ</title>
 </head>
 
@@ -361,17 +361,13 @@ if(!empty($_POST)){
                 <img src="<?php echo $_SESSION['monster']->getImg(); ?>">
             </div>
             <p class="hero-hp">勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?></p>
-            
-            <div style="background-color:lightblue; padding:20px 20px 10px;">
-                <!-- <input type="button" id="wkBtn" value="スタート"> -->
-                <div id="wkPg"></div>
-                <div id="wkText" style="bottom:10px;"></div>
-            </div>
-            
+            <!-- hpバー -->
+            <div id="heroHpBar"></div>
+
             <p class="monster-count">倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
             <!-- formタグでボタンを生成 -->
             <form method="post">
-                <input type="submit" name="attack" value="▶通常攻撃">
+                <input type="submit" class="attack" name="attack" value="▶通常攻撃">
                 <input type="submit" name="specialAttack" value="▶必殺技">
                 <input type="submit" name="magicalAttack" value="▶魔法攻撃">
                 <input type="submit" name="escape" value="▶逃げる">
@@ -393,26 +389,35 @@ if(!empty($_POST)){
 
 <!-- 要変更 -->
 <script type="text/javascript">
+    var phpSession = <?php echo json_encode($_SESSION['human']->getHp());?>;
+    console.log(phpSession);
     $(function(){
-        $("attack").click(function(){
-            $("#wkPg").progressbar({
-                value: max,
-                // changeはprogressbαrの値が変化した際に発火
-                change: function() {
-                $("#wkText").text($("#wkPg").progressbar("value"));
-                },
-                // completeは最大値に達した時に発生するイベント
-                // complete: function() {
-                // $("#wkText").text($("#wkPg").progressbar("value") + "%　完了");
-                // }
-            });
-            // var id = setInterval(function() {
-            //     var val = $("#wkPg").progressbar("value");
-            //     $("#wkPg").progressbar("value", ++val);
-            //     if (val >= 100) {clearInterval(id)}
-            // }, 10);
+        $("#heroHpBar").progressbar({
+            value: phpSession,//勇者の初期hp
+            max: 500
         });
     });
+
+    // $(function(){
+    //     $("attack").click(function(){
+    //         $("#wkPg").progressbar({
+    //             value: max,
+    //             // changeはprogressbαrの値が変化した際に発火
+    //             change: function() {
+    //             $("#wkText").text($("#wkPg").progressbar("value"));
+    //             },
+    //             // completeは最大値に達した時に発生するイベント
+    //             // complete: function() {
+    //             // $("#wkText").text($("#wkPg").progressbar("value") + "%　完了");
+    //             // }
+    //         });
+    //         // var id = setInterval(function() {
+    //         //     var val = $("#wkPg").progressbar("value");
+    //         //     $("#wkPg").progressbar("value", ++val);
+    //         //     if (val >= 100) {clearInterval(id)}
+    //         // }, 10);
+    //     });
+    // });
 </script>
 
 </html>
