@@ -126,9 +126,9 @@ class Monster extends Creature{
 class MagicMonster extends Monster{
     private $magicAttack;
     //継承しているのでこのクラスで宣言していないもの（magicAttack）以外を呼び出せる
-    function __construct($name, $hp, $img, $attackMin, $attackMax, $magicAttack) {
+    function __construct($name, $hp, $maxHp, $img, $attackMin, $attackMax, $magicAttack) {
         //親クラスのコンストラクタで処理する内容を継承したい場合には親コンストラクタを呼び出す
-        parent::__construct($name, $hp, $img, $attackMin, $attackMax);
+        parent::__construct($name, $hp, $maxHp, $img, $attackMin, $attackMax);
         $this->magicAttack = $magicAttack;
     }
     public function getMagicAttack(){
@@ -364,6 +364,8 @@ if(!empty($_POST)){
             <p class="monster-hp">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
             <div id="monsterHpBar"></div>
 
+            <?php print_f($_SESSION['monster'])?>
+            
             <div class="monster-image">
                 <img src="<?php echo $_SESSION['monster']->getImg(); ?>">
             </div>
@@ -394,27 +396,29 @@ if(!empty($_POST)){
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
-<!-- HPゲージ -->
+<!-- 要変更 -->
 <script type="text/javascript">
     // そのままサーバーにあるSESSIONはjsでは使えないため、jsonに渡して変数に配列として保存するとベスト
     var humanHpSession = <?php echo json_encode($_SESSION['human']->getHp());?>;
-    
+    console.log(humanHpSession);
     $(function(){
         $("#heroHpBar").progressbar({
             value: humanHpSession,//勇者の初期hp
             max: 500
         });
     });
-    // モンスターのHP
+
     var monsterHpSession = <?php echo json_encode($_SESSION['monster']->getHp());?>;
     var monsterMaxHpSession = <?php echo json_encode($_SESSION['monster']->getMaxHp());?>;
 
+    console.log(monsterHpSession);
     $(function(){
         $("#monsterHpBar").progressbar({
             value: monsterHpSession,//勇者の初期hp
             max: monsterMaxHpSession
         });
     });
+
 </script>
 
 </html>
