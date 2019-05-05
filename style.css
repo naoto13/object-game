@@ -70,18 +70,20 @@ input[type="submit"]:hover{
     color: white;
 }
 input[type="submit"]:last-child{
-    margin: 15px 0px;
+    margin: 0dpx 0px 0px;
     float: right;
     background: rgb(243, 224, 48);
     color: black;
     border-radius: 15px;
 }
-.monster-image{
+.monsterImage{
     width:120px;
     margin:0 auto;
     display:block;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
-.monster-image img{
+.monsterImage img{
     height:130px;
     width: auto;
 }
@@ -112,9 +114,10 @@ input[type="submit"]:last-child{
 }
 
 
-.monster-count{
-    text-align: right;
+.monsterCount{
+    text-align: left;
     font-size: 0.7rem;
+    margin-bottom: 0.5rem;
 }
 input[type="submit"]:hover{
     background: #3d3938;
@@ -136,9 +139,6 @@ a:hover{
     padding:15px;
     border: double 10px white;
     font-size: 0.7rem;
-}
-.reset{
-    font-family: PixelMplus12-Regular;
 }
 .history .message{
     padding-bottom: 10px;

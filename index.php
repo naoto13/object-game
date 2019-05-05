@@ -351,7 +351,7 @@ if(!empty($_POST)){
 </head>
 
 <body>
-    <h1 class="title">ゲーム「ドラ◯エ!!」</h1>
+    <!-- <h1 class="title">ゲーム「ドラ◯エ!!」</h1> -->
     <div class="game-window">
         <!-- SESSIONがからの場合はスタート画面へ -->
         <?php if(empty($_SESSION)){ ?>
@@ -364,14 +364,13 @@ if(!empty($_POST)){
             <p class="monster-hp">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
             <div id="monsterHpBar"></div>
 
-            <div class="monster-image">
+            <div class="monsterImage">
                 <img src="<?php echo $_SESSION['monster']->getImg(); ?>">
             </div>
             <p class="hero-hp">勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?></p>
             <!-- hpバー -->
             <div id="heroHpBar"></div>
 
-            <p class="monster-count">倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
             <!-- formタグでボタンを生成 -->
             <form method="post">
                 <input type="submit" class="attack" name="attack" value="▶ 通常攻撃">
@@ -380,6 +379,7 @@ if(!empty($_POST)){
                 <input type="submit" name="escape" value="▶ 逃げる">
                 <input type="submit" class="reset" name="start" value="▶ ゲームリスタート">
             </form>
+            <p class="monsterCount">倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
         <?php } ?>
         <!-- バー -->
         <div class="history">

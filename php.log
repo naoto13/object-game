@@ -1424,3 +1424,22 @@ Stack trace:
 [05-May-2019 05:11:42 UTC] POSTされた！
 [05-May-2019 05:12:04 UTC] POSTされた！
 [05-May-2019 05:12:22 UTC] POSTされた！
+[05-May-2019 05:14:45 UTC] POSTされた！
+[05-May-2019 05:15:12 UTC] POSTされた！
+[05-May-2019 05:16:06 UTC] POSTされた！
+[05-May-2019 05:17:32 UTC] POSTされた！
+[05-May-2019 05:18:12 UTC] POSTされた！
+[05-May-2019 05:18:12 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[05-May-2019 05:18:18 UTC] POSTされた！
+[05-May-2019 05:18:18 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[05-May-2019 05:18:21 UTC] POSTされた！
+[05-May-2019 05:18:21 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[05-May-2019 05:18:23 UTC] POSTされた！
+[05-May-2019 05:18:23 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[05-May-2019 05:18:25 UTC] POSTされた！
+[05-May-2019 05:18:25 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 322
+[05-May-2019 05:18:29 UTC] POSTされた！
+[05-May-2019 05:18:30 UTC] POSTされた！
+[05-May-2019 05:18:33 UTC] POSTされた！
+[05-May-2019 05:21:15 UTC] POSTされた！
+[05-May-2019 05:21:50 UTC] POSTされた！
