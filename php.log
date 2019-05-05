@@ -1411,3 +1411,16 @@ Stack trace:
 [05-May-2019 04:48:15 UTC] POSTされた！
 [05-May-2019 04:48:15 UTC] POSTされた！
 [05-May-2019 04:48:16 UTC] POSTされた！
+[05-May-2019 04:58:59 UTC] POSTされた！
+[05-May-2019 04:59:10 UTC] POSTされた！
+[05-May-2019 04:59:10 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 374
+[05-May-2019 04:59:44 UTC] POSTされた！
+[05-May-2019 04:59:44 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 322
+[05-May-2019 05:01:08 UTC] POSTされた！
+[05-May-2019 05:08:04 UTC] POSTされた！
+[05-May-2019 05:08:26 UTC] POSTされた！
+[05-May-2019 05:09:53 UTC] POSTされた！
+[05-May-2019 05:10:17 UTC] POSTされた！
+[05-May-2019 05:11:42 UTC] POSTされた！
+[05-May-2019 05:12:04 UTC] POSTされた！
+[05-May-2019 05:12:22 UTC] POSTされた！

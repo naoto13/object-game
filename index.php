@@ -374,11 +374,11 @@ if(!empty($_POST)){
             <p class="monster-count">倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
             <!-- formタグでボタンを生成 -->
             <form method="post">
-                <input type="submit" class="attack" name="attack" value="▶通常攻撃">
-                <input type="submit" name="specialAttack" value="▶必殺技">
-                <input type="submit" name="magicalAttack" value="▶魔法攻撃">
-                <input type="submit" name="escape" value="▶逃げる">
-                <input type="submit" name="start" value="▶ゲームリスタート">
+                <input type="submit" class="attack" name="attack" value="▶ 通常攻撃">
+                <input type="submit" name="specialAttack" value="▶ 必殺技">
+                <input type="submit" name="magicalAttack" value="▶ 魔法攻撃">
+                <input type="submit" name="escape" value="▶ 逃げる">
+                <input type="submit" class="reset" name="start" value="▶ ゲームリスタート">
             </form>
         <?php } ?>
         <!-- バー -->

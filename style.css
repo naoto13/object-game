@@ -1,3 +1,9 @@
+@font-face {
+	font-family: PixelMplus12-Regular;
+    /* src: url('http://kuneoresearch.com/wp-content/themes/stinger5verkuneo/font/PixelMplus10-Regular.ttf') format("truetype"); */
+	src: url('./PixelMplus-20130602/PixelMplus12-Regular.ttf') format("truetype");
+}
+
 body{
     margin: 0 auto;
     padding: 3%;
@@ -6,6 +12,7 @@ body{
     background: #fbfbfa;
     color: white;
     text-align: center;
+    font-family: PixelMplus12-Regular;
 }
 h1{
     color: black;
@@ -85,9 +92,13 @@ input[type="submit"]:last-child{
 .hero-hp{
     text-align: left;
 }
-/* hp-bar */
+/* ------------
+    hp-bar
+--------------*/
 .ui-progressbar{
-    height: 1rem !important;
+    height: 0.5rem !important;
+    width:70% !important;
+    overflow: hidden;
 }
 .ui-corner-all{
     border-radius: 6px !important;
@@ -95,6 +106,9 @@ input[type="submit"]:last-child{
 .ui-widget-header{
     background: rgb(116, 245, 30) !important;
     height: 1.1rem !important;
+}
+#monsterHpBar{
+    float: right;
 }
 
 
@@ -122,6 +136,9 @@ a:hover{
     padding:15px;
     border: double 10px white;
     font-size: 0.7rem;
+}
+.reset{
+    font-family: PixelMplus12-Regular;
 }
 .history .message{
     padding-bottom: 10px;
