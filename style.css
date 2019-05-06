@@ -35,6 +35,7 @@ h2{
 }
 form{
     overflow: hidden;
+    font-family: PixelMplus12-Regular;
 }
 input[type="text"]{
     color: #545454;

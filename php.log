@@ -1443,3 +1443,63 @@ Stack trace:
 [05-May-2019 05:18:33 UTC] POSTされた！
 [05-May-2019 05:21:15 UTC] POSTされた！
 [05-May-2019 05:21:50 UTC] POSTされた！
+[05-May-2019 05:23:45 UTC] POSTされた！
+[05-May-2019 05:23:50 UTC] POSTされた！
+[05-May-2019 05:23:54 UTC] POSTされた！
+[05-May-2019 05:23:54 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[05-May-2019 05:23:55 UTC] POSTされた！
+[05-May-2019 05:23:55 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[05-May-2019 05:26:22 UTC] POSTされた！
+[05-May-2019 05:26:22 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 322
+[05-May-2019 05:26:24 UTC] POSTされた！
+[06-May-2019 03:55:36 UTC] POSTされた！
+[06-May-2019 03:55:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Human::geMaxtHp() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:370
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 370
+[06-May-2019 03:56:24 UTC] POSTされた！
+[06-May-2019 03:56:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Human::geMaxHp() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:370
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 370
+[06-May-2019 03:56:30 UTC] POSTされた！
+[06-May-2019 03:56:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Human::geMaxHp() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:370
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 370
+[06-May-2019 03:58:30 UTC] POSTされた！
+[06-May-2019 03:58:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Human::geMaxHp() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:370
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 370
+[06-May-2019 03:58:32 UTC] POSTされた！
+[06-May-2019 03:58:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Human::geMaxHp() in /Applications/MAMP/htdocs/objective_game/object-game/index.php:370
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 370
+[06-May-2019 03:59:02 UTC] POSTされた！
+[06-May-2019 03:59:22 UTC] POSTされた！
+[06-May-2019 03:59:26 UTC] POSTされた！
+[06-May-2019 03:59:35 UTC] POSTされた！
+[06-May-2019 03:59:36 UTC] POSTされた！
+[06-May-2019 03:59:36 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[06-May-2019 03:59:49 UTC] POSTされた！
+[06-May-2019 03:59:49 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[06-May-2019 03:59:50 UTC] POSTされた！
+[06-May-2019 03:59:50 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 322
+[06-May-2019 04:02:01 UTC] POSTされた！
+[06-May-2019 04:02:08 UTC] POSTされた！
+[06-May-2019 04:03:57 UTC] POSTされた！
+[06-May-2019 04:08:21 UTC] POSTされた！
+[06-May-2019 05:34:04 UTC] POSTされた！
+[06-May-2019 05:34:22 UTC] POSTされた！
+[06-May-2019 05:34:56 UTC] POSTされた！
+[06-May-2019 05:35:13 UTC] POSTされた！
+[06-May-2019 05:35:13 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[06-May-2019 05:35:26 UTC] POSTされた！
+[06-May-2019 05:35:26 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[06-May-2019 05:35:30 UTC] POSTされた！
+[06-May-2019 05:35:30 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 382
+[06-May-2019 05:39:03 UTC] POSTされた！
+[06-May-2019 05:39:03 UTC] PHP Notice:  Undefined index: knockDownCount in /Applications/MAMP/htdocs/objective_game/object-game/index.php on line 322
+[06-May-2019 05:39:08 UTC] POSTされた！

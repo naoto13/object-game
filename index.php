@@ -117,8 +117,8 @@ class Monster extends Creature{
         return $this->img;
     }
     public function sayCry(){
-        History::set($this->name.'が叫ぶ！');
-        History::set('はうっ！');
+        History::set($this->name.'が悲鳴をあげた！');
+        // History::set('はうっ！');
     }
 }
 
@@ -360,14 +360,14 @@ if(!empty($_POST)){
                 <input type="submit" name="start" value="▶ゲームスタート">
             </form>
         <?php }else{ ?>
-            <h2><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
-            <p class="monster-hp">モンスターのHP：<?php echo $_SESSION['monster']->getHp(); ?></p>
+            <h2 class="encounter"><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
+            <p class="monster-hp"><?php echo $_SESSION['monster']->getName(); ?>のHP：<?php echo $_SESSION['monster']->getHp(); ?>/<?php echo $_SESSION['monster']->getMaxHp(); ?></p>
             <div id="monsterHpBar"></div>
 
             <div class="monsterImage">
                 <img src="<?php echo $_SESSION['monster']->getImg(); ?>">
             </div>
-            <p class="hero-hp">勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?></p>
+            <p class="hero-hp">勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?>/<?php echo $_SESSION['human']->getMaxHp(); ?></p>
             <!-- hpバー -->
             <div id="heroHpBar"></div>
 
@@ -396,23 +396,28 @@ if(!empty($_POST)){
 
 <!-- HPゲージ -->
 <script type="text/javascript">
+    // $(function(){
+    //     $('.encounter').hide().fadeIn('600');
+    // })
+    
     // そのままサーバーにあるSESSIONはjsでは使えないため、jsonに渡して変数に配列として保存するとベスト
-    var humanHpSession = <?php echo json_encode($_SESSION['human']->getHp());?>;
+    var humanHpSession = <?php echo json_encode($_SESSION['human']->getHp())?>;
+    var humanMaxHpSession = <?php echo json_encode($_SESSION['human']->getMaxHp())?>;
     
     $(function(){
         $("#heroHpBar").progressbar({
-            value: humanHpSession,//勇者の初期hp
-            max: 500
+            value: humanHpSession,
+            max: humanMaxHpSession//勇者の初期hp
         });
     });
     // モンスターのHP
-    var monsterHpSession = <?php echo json_encode($_SESSION['monster']->getHp());?>;
-    var monsterMaxHpSession = <?php echo json_encode($_SESSION['monster']->getMaxHp());?>;
+    var monsterHpSession = <?php echo json_encode($_SESSION['monster']->getHp())?>;
+    var monsterMaxHpSession = <?php echo json_encode($_SESSION['monster']->getMaxHp())?>;
 
     $(function(){
         $("#monsterHpBar").progressbar({
-            value: monsterHpSession,//勇者の初期hp
-            max: monsterMaxHpSession
+            value: monsterHpSession,
+            max: monsterMaxHpSession//初期hp
         });
     });
 </script>
