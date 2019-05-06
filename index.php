@@ -397,7 +397,7 @@ if(!empty($_POST)){
 <!-- HPゲージ -->
 <script type="text/javascript">
     // $(function(){
-    //     $('.encounter').hide().fadeIn('600');
+    //     $('.encounter')fadeIn('600');
     // })
     
     // そのままサーバーにあるSESSIONはjsでは使えないため、jsonに渡して変数に配列として保存するとベスト
