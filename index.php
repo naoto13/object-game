@@ -360,24 +360,26 @@ if(!empty($_POST)){
                 <input type="submit" name="start" value="▶ゲームスタート">
             </form>
         <?php }else{ ?>
-            <h2 class="encounter"><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
-            <p class="monster-hp"><?php echo $_SESSION['monster']->getName(); ?>のHP：<?php echo $_SESSION['monster']->getHp(); ?>/<?php echo $_SESSION['monster']->getMaxHp(); ?></p>
-            <div id="monsterHpBar"></div>
-
-            <div class="monsterImage">
-                <img src="<?php echo $_SESSION['monster']->getImg(); ?>">
+            <h2 class="rightFadein"><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
+            <div class="leftFadein">
+                <p class="monster-hp"><?php echo $_SESSION['monster']->getName(); ?>のHP：<?php echo $_SESSION['monster']->getHp(); ?>/<?php echo $_SESSION['monster']->getMaxHp(); ?></p>
+                <div id="monsterHpBar"></div>
+                <div class="monsterImage">
+                    <img src="<?php echo $_SESSION['monster']->getImg(); ?>">
+                </div>
             </div>
-            <p class="hero-hp">勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?>/<?php echo $_SESSION['human']->getMaxHp(); ?></p>
-            <!-- hpバー -->
-            <div id="heroHpBar"></div>
-
+            <div class="rightFadein">
+                <p class="hero-hp">勇者の残りHP：<?php echo $_SESSION['human']->getHp(); ?>/<?php echo $_SESSION['human']->getMaxHp(); ?></p>
+                <!-- hpバー -->
+                <div id="heroHpBar"></div>
+            </div>
+            
             <!-- formタグでボタンを生成 -->
             <form method="post">
                 <input type="submit" class="attack" name="attack" value="▶ 通常攻撃">
                 <input type="submit" name="specialAttack" value="▶ 必殺技">
                 <input type="submit" name="magicalAttack" value="▶ 魔法攻撃">
                 <input type="submit" name="escape" value="▶ 逃げる">
-                <input type="submit" class="reset" name="start" value="▶ ゲームリスタート">
             </form>
             <p class="monsterCount">倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
         <?php } ?>
@@ -387,6 +389,10 @@ if(!empty($_POST)){
                 <?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?>
             </div>
         </div>
+
+        <form method="post">
+            <input type="submit" class="reset" name="start" value="▶ ゲームリスタート">
+        </form>
     </div>
 </body>
 <footer>

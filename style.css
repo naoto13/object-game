@@ -36,15 +36,30 @@ h2{
 /* ------------
     monster-title
 --------------*/
-.encounter{
-    animation-name: fadein;
+.rightFadein{
+    animation-name: fadeinRight;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
-@keyframes fadein{
+.leftFadein{
+    animation-name: fadeinLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes fadeinRight{
     from{
         opacity: 0;
         transform: translateX(20px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes fadeinLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-20px)
     }
     to{
         opacity: 1;
@@ -88,8 +103,9 @@ input[type="submit"]:hover{
     background: gray;
     color: white;
 }
-input[type="submit"]:last-child{
-    margin: 0dpx 0px 0px;
+
+form .reset{
+    margin: 10px 0px 0px;
     float: right;
     background: rgb(243, 224, 48);
     color: black;
@@ -134,7 +150,7 @@ input[type="submit"]:last-child{
 
 
 .monsterCount{
-    text-align: left;
+    text-align: right;
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
 }
