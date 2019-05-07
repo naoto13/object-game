@@ -360,7 +360,7 @@ if(!empty($_POST)){
                 <input type="submit" name="start" value="▶ゲームスタート">
             </form>
         <?php }else{ ?>
-            <h2 class="rightFadein"><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
+            <h2><?php echo $_SESSION['monster']->getName().'が現れた!!'; ?></h2>
             <div class="leftFadein">
                 <p class="monster-hp"><?php echo $_SESSION['monster']->getName(); ?>のHP：<?php echo $_SESSION['monster']->getHp(); ?>/<?php echo $_SESSION['monster']->getMaxHp(); ?></p>
                 <div id="monsterHpBar"></div>
