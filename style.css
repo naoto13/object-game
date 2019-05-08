@@ -23,7 +23,7 @@ style{
     text-align:center;
     color:#333;
 }
-.game-window{
+.gameWindow{
     background:black;
     padding:15px;
 }
@@ -33,39 +33,7 @@ h2{
     text-align: initial;
     margin: 3%;
 }
-/* ------------
-    monster-title
---------------*/
-.rightFadein{
-    animation-name: fadeinRight;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-}
-.leftFadein{
-    animation-name: fadeinLeft;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-}
-@keyframes fadeinRight{
-    from{
-        opacity: 0;
-        transform: translateX(20px)
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0)
-    }
-}
-@keyframes fadeinLeft{
-    from{
-        opacity: 0;
-        transform: translateX(-20px)
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0)
-    }
-}
+
 form{
     overflow: hidden;
     font-family: PixelMplus12-Regular;
@@ -181,3 +149,75 @@ a:hover{
     overflow: scroll;
     text-align: start;
 }
+/*------------------------- animation------------------------ */
+/* ----------------------
+    monster-encount
+-------------------------*/
+.rightFadein{
+    animation-name: fadeinRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.leftFadein{
+    animation-name: fadeinLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes fadeinRight{
+    from{
+        opacity: 0;
+        transform: translateX(20px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes fadeinLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-20px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+/* ----------------------
+    attack
+-------------------------*/
+.shock{
+    animation-name:shock;
+    animation-iteration-count:1;
+    animation-duration:1s;
+}
+@keyframes shock{
+    20% {transform: translate(20px);}
+    40% {transform: translate(-20px);}
+    60% {transform: translate(10px);}
+    80% {transform: translate(-10px);}
+}
+.attack img{
+    animation-name: "attack";
+    animation-iteration-count:1;
+    animation-duration:1s;
+}
+@keyframes attack{
+    50% {transform: scale(1.5) rotate(-15deg);}
+}
+.damage img {
+    animation-name: "damage";
+    animation-iteration-count:1;
+    animation-duration:1s;
+}
+@keyframes damage{
+    10% { opacity: 0.5; transform: translate(2px); }
+    20% { opacity: 1; }
+    30% { opacity: 0.5; transform: translate(-2px); }
+    40% { opacity: 1; }
+    50% { opacity: 0.5; transform: translate(2px); }
+    60% { opacity: 1; }
+    70% { opacity: 0.5; transform: translate(-2px); }
+    80% { opacity: 1; }
+    90% { opacity: 0.5; transform: translate(2px); }
+  }

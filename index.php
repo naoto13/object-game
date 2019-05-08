@@ -1,7 +1,5 @@
 <!-- full -->
-
 <?php
-
 ini_set('log_errors','on');
 ini_set('error_log','php.log');
 session_start();
@@ -47,8 +45,7 @@ abstract class Creature{
         if(!mt_rand(0,9)){//10分の１の確率でモンスターのクリティカル
             $attackPoint *= 1.5;
             $attackPoint = (int)$attackPoint;
-            // History::set($this->getName().'のクリティカルヒット!!');//密結合。attackクラスはHistoryクラスがないと成り立たない状況
-
+            History::set($this->getName().'のクリティカルヒット!!');//密結合。attackクラスはHistoryクラスがないと成り立たない状況
         }
         // 攻撃する相手が引数で変わるようになっている
         $targetObj->setHp($targetObj->getHp()-$attackPoint);
@@ -156,38 +153,6 @@ class MagicMonster extends Monster{
     }
 }
 
-// //セッター2つ（setHP, setAttack）
-//     public function setHp($num){
-//         //セッターを使うことで、直接代入させずにバリデーションチェックを行ってから代入させることができる
-//         // FILTER_VALIDATE_INTでint型かどうかを確認（小数点の排除）
-//         $this->hp = filter_var($num, FILTER_VALIDATE_INT);
-//         //filter_varは値に対して色々なパターンのバリデーションを行える便利関数
-//     }
-//     public function setAttack($num){
-//         $this->attack = (int)filter_var($num, FILTER_VALIDATE_FLOAT);
-//     }
-
-// //ゲッター（getName, getHp, getImg, getAttack）
-//     public function getName(){
-//         return $this->name;
-//     }
-//     public function getHp(){
-//         return $this->hp;
-//     }
-//     public function getImg(){
-//         // あとあとでimgが入っていなかったら、no-imgをだそう！となった時でも、クラスを書き換えるだけ！
-//         // もしゲッターメソッドを使っていなければ、取得するコードのかしょ全部を修正しなければいけない！
-//         // カプセル化をすることで、呼び出す側は「中で何をしているのか」を気にせず、ただ呼び出せばいいだけになる（疎結合）
-//         if(empty($this->img)){
-//             return 'img/no-img.png';
-//         }
-//         return $this->img;
-//     }
-//     public function getAttack(){
-//         return $this->attack;
-//     }
-// }
-
 //多くのHistoryがsetされていることが前提となり、密結合をしているのでインターフェースを作り、
 // 実装することで、setされてないときにエラーが出るようになり、素早く原因を突き止められる
 interface HistoryInterface{
@@ -219,26 +184,24 @@ class History implements HistoryInterface{
 //性別は３などの筋で設定可能だが、可読性が悪くなるため、クラス定数を使用し、クラス名::中身　と書くことでわかりやすくなる
 // define(WOMAN,2);を用いて下のように書くこともできるが、なんのWOMANなのかわかりづらいため▽
 // $human = new Human('勇者見習い',WOMAN, 500, 40, 120);
-
 $human = new Human('勇者見習い', Sex::MAN, 500, 40, 120);
-$monsters[] = new Monster( 'フランケン', 100, 'img/monster01.png', 20, 40 );
-$monsters[] = new MagicMonster( 'フランケンNEO', 300, 'img/monster02.png', 20, 60, mt_rand(50, 100) );
-$monsters[] = new Monster( 'ドラキュリー', 200, 'img/monster03.png', 30, 50 );
-$monsters[] = new MagicMonster( 'ドラキュラ男爵', 400, 'img/monster04.png', 50, 80, mt_rand(60, 120) );
-$monsters[] = new Monster( 'スカルフェイス', 150, 'img/monster05.png', 30, 60 );
-$monsters[] = new Monster( '毒ハンド', 100, 'img/monster06.png', 10, 30 );
-$monsters[] = new Monster( '泥ハンド', 120, 'img/monster07.png', 20, 30 );
-$monsters[] = new Monster( '血のハンド', 180, 'img/monster08.png', 30, 50 );
+// $monsters[] = new Monster( 'モンスター名', 体力, '画像', 最小攻撃力, 最大攻撃力,魔法攻撃力 );
+$monsters[] = new Monster( 'スライム', 100, 'img/fc01_suraimu.png', 20, 40 );
+$monsters[] = new Monster( 'ゴールドマン', 230, 'img/fc19_go-rudoman.png', 80, 140 );
+$monsters[] = new MagicMonster( 'ドラゴン', 280, 'img/fc30_doragon.png', 60, 80, mt_rand(80, 120) );
+$monsters[] = new MagicMonster( '大魔道士', 150, 'img/fc32_daimadou.png', 10, 20, mt_rand(10, 200) );
+$monsters[] = new MagicMonster( '竜王', 500, 'img/ryuuou2.png', 100, 200, mt_rand(100, 200) );
 
 //インスタンスのなかのプロパティ（属性）にアクセスするときはアロー関数が必要
 // (今までのような連想配列だったら$monster['name']だったが、インスタンスは->だけで良い)
 // monstarは呼び出された１体。monstersはインスタンス
 function createMonster(){
     global $monsters;
-    $monster =  $monsters[mt_rand(0, 7)];
+    $monster =  $monsters[mt_rand(0, 4)];
     // privateなのでnameに直接アクセスできない。そのためゲッターメソッドを使用
     // $_SESSION['history'] .= $monster->getName().'が現れた！<br>';
-    History::set($monster->getName().'が現れた！');
+    History::set($monster->getName().'があらわれた！');
+    History::set('しかし'.$monster->getName().'は まだ こちらにきづいていない！');
     // セッションの中にはインスタンスがそのまま入っている
     $_SESSION['monster'] =  $monster;
 }
@@ -251,7 +214,7 @@ function createHuman(){
 
 function init(){
     History::clear();
-    History::set('初期化します！');
+    History::set('初期化(リスタート)！');
     // knockDownCountは倒したモンスターの数のカウント
     $_SESSION['knockDownCount'] = 0;
     createHuman();
@@ -259,6 +222,7 @@ function init(){
 }
 // ゲームオーバーの場合はセッションクリア→スタート画面へ
 function gameOver(){
+    History::set('目の前が真っ暗になった....');
     // debug('セッションクリアします！');
     $_SESSION = array();
     createHuman();
@@ -279,7 +243,6 @@ if(!empty($_POST)){
     }else{
         // 攻撃するを押した場合
         if($attackFlg){
-
         // ランダムでモンスターに攻撃を与える
             History::set($_SESSION['human']->getName().'の攻撃！');
             // attackメソッドの引数に対象を入れれるようにすることで、自分自身も攻撃対象に設定可能に
@@ -352,7 +315,7 @@ if(!empty($_POST)){
 
 <body>
     <!-- <h1 class="title">ゲーム「ドラ◯エ!!」</h1> -->
-    <div class="game-window">
+    <div class="gameWindow">
         <!-- SESSIONがからの場合はスタート画面へ -->
         <?php if(empty($_SESSION)){ ?>
             <h2>GAME START ?</h2>
@@ -402,9 +365,6 @@ if(!empty($_POST)){
 
 <!-- HPゲージ -->
 <script type="text/javascript">
-    // $(function(){
-    //     $('.encounter')fadeIn('600');
-    // })
     
     // そのままサーバーにあるSESSIONはjsでは使えないため、jsonに渡して変数に配列として保存するとベスト
     var humanHpSession = <?php echo json_encode($_SESSION['human']->getHp())?>;
@@ -426,6 +386,12 @@ if(!empty($_POST)){
             max: monsterMaxHpSession//初期hp
         });
     });
+    // $(function(){
+    //     $(.attack),click(function(){
+    //         $(.gameWindow).toggleClass("shock");
+    //         $(.gameWindow).fadeClass("500");
+    //     })
+    // });
 </script>
 
 </html>
