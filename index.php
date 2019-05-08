@@ -6,15 +6,11 @@ session_start();
 
 // モンスター達格納用
 $monsters = array();
-//クラス（設計図）の作成。クラス名の先頭は大文字で
-
 //性別クラス（クラス定数）
 class Sex{
     const MAN = 1;
     const WOMAN = 2;
-    const OKAMA = 3;
 }
-
 //抽象クラス（生き物クラス）各クラスで共通するものを抜き出している。
 //  変わらないプロパティは、そのままprotectedで継承先でも使えるように
 //  クラスごとに変わるものは抽象メソッドとしてabstract public functionとして定義する
@@ -25,7 +21,6 @@ abstract class Creature{
     protected $attackMin;
     protected $attackMax;
     abstract public function sayCry();
-
     // 共通して使いそうなセッターゲッターを定義
     public function setName($str){ $this->name = $str; }
     public function getName(){ return $this->name; }
@@ -33,7 +28,6 @@ abstract class Creature{
     public function getHp(){ return $this->hp; }
     public function setMaxHp($num){ $this->maxHp = $num; }
     public function getMaxHp(){ return $this->maxHp; }
-
     // attackは以前までは引数なしattack()で人クラスやモンスタークラスの中に書いていたが
     //   これだと、攻撃する相手がmonster確定なので、混乱して自分を攻撃などができなくなる。
     //   そのためattackには攻撃する相手を引数としてratgetObjとする（疎結合）
@@ -52,39 +46,32 @@ abstract class Creature{
         History::set($attackPoint.'ポイントのダメージ！');
     }
 }
-
 //人クラス（こうすることで後々勇者クラスなどに拡張（継承）できる）
 class Human extends Creature{
     protected $sex;
-    public function __construct($name, $sex, $hp, $attackMin, $attackMax) {
+    public function __construct($name, $sex, $hp, $attackMin, $attackMax, $magicAttack) {
         $this->name = $name;
         $this->sex = $sex;
         $this->hp = $hp;
         $this->maxHp = $hp;
         $this->attackMin = $attackMin;
         $this->attackMax = $attackMax;
+        $this->magicAttack = $magicAttack;
     }
-    
     public function setSex($num){
         $this->sex = $num;
     }
     public function getSex(){
         return $this->sex;
     }
-    
     // クラス定数を用いて、わかりやすくswitch文で分岐させる。
     public function sayCry(){
         History::set($this->name.'が叫ぶ！');
         switch($this->sex){
             case Sex::MAN :
-                History::set('ぐはぁっ！');
-                break;
+                History::set('ぐはぁっ！'); break;
             case Sex::WOMAN :
-                History::set('きゃっ！');
-                break;
-            case Sex::OKAMA :
-                History::set('もっと！♡');
-                break;
+                History::set('きゃっ！'); break;
         }
     }
 }
@@ -114,11 +101,9 @@ class Monster extends Creature{
         return $this->img;
     }
     public function sayCry(){
-        History::set($this->name.'が悲鳴をあげた！');
-        // History::set('はうっ！');
+        // History::set($this->name.'が悲鳴をあげた！');
     }
 }
-
 //魔法を使えるモンスタークラス（継承）
 class MagicMonster extends Monster{
     private $magicAttack;
@@ -133,11 +118,7 @@ class MagicMonster extends Monster{
     }
     //セッターゲッターなども引き継がれている
     //魔法攻撃力が増えることはない前提として、セッターは作らない
-    // public function magicAttack(){
-    //     $_SESSION['history'] .= $this->name.'の魔法攻撃!!<br>';
-    //     $_SESSION['myhp'] -= $this->magicAttack;
-    //     $_SESSION['history'] .= $this->magicAttack.'ポイントのダメージを受けた！<br>';
-    // }
+
     //Attackメソッドをオーバーライドすることで、「ゲーム進行を管理する処理側」は単にattackメソッドを呼べばいいだけになる
     // 魔法を使えるモンスターは自分で魔法を出すか普通に攻撃するかを判断する
     public function attack($targetObj){
@@ -168,29 +149,29 @@ class History implements HistoryInterface{
         //セッションhistoryが作られてなければ作る
         if(empty($_SESSION['history'])) $_SESSION['history'] = '';
         //文字列をセッションhistoryへ移動
-        // $_SESSION['history'] .= $str.'<br>';
         $_SESSION['history'] = $str.'<br>'.$_SESSION['history'];
-        // $_SESSION['history_all'] .= $str.'<br>';
     }
     public static function clear(){
         unset($_SESSION['history']);
-        // unset($_SESSION['history_all']);
     }
 }
 
-
+// ーーーーーーーーーーーーーーーー
+//        クラス定義終了
+// ーーーーーーーーーーーーーーーー
 
 //インスタンス生成 それぞれ初期値を入れている。（必ず必要というわけではない）
 //性別は３などの筋で設定可能だが、可読性が悪くなるため、クラス定数を使用し、クラス名::中身　と書くことでわかりやすくなる
 // define(WOMAN,2);を用いて下のように書くこともできるが、なんのWOMANなのかわかりづらいため▽
-// $human = new Human('勇者見習い',WOMAN, 500, 40, 120);
-$human = new Human('勇者見習い', Sex::MAN, 500, 40, 120);
+
+// $human[] = new Human( 'プレイヤー名',性別, 体力, 最小攻撃力, 最大攻撃力,魔法攻撃力 );
+$human = new Human('勇者見習い', Sex::MAN, 500, 40, 120, mt_rand(80, 120));
 // $monsters[] = new Monster( 'モンスター名', 体力, '画像', 最小攻撃力, 最大攻撃力,魔法攻撃力 );
 $monsters[] = new Monster( 'スライム', 100, 'img/fc01_suraimu.png', 20, 40 );
 $monsters[] = new Monster( 'ゴールドマン', 230, 'img/fc19_go-rudoman.png', 80, 140 );
 $monsters[] = new MagicMonster( 'ドラゴン', 280, 'img/fc30_doragon.png', 60, 80, mt_rand(80, 120) );
 $monsters[] = new MagicMonster( '大魔道士', 150, 'img/fc32_daimadou.png', 10, 20, mt_rand(10, 200) );
-$monsters[] = new MagicMonster( '竜王', 500, 'img/ryuuou2.png', 100, 200, mt_rand(100, 200) );
+$monsters[] = new MagicMonster( '竜王', 500, 'img/fc40_ryuuou2.png', 100, 200, mt_rand(100, 200) );
 
 //インスタンスのなかのプロパティ（属性）にアクセスするときはアロー関数が必要
 // (今までのような連想配列だったら$monster['name']だったが、インスタンスは->だけで良い)
@@ -208,8 +189,7 @@ function createMonster(){
 
 function createHuman(){
     global $human;
-    // セッションにhumanという変数を作り、humanのインスタンスを中に入れる
-    $_SESSION['human'] =  $human;
+    $_SESSION['human'] =  $human;// セッションにhumanという変数を作り、humanのインスタンスを中に入れる
 }
 
 function init(){
@@ -248,29 +228,11 @@ if(!empty($_POST)){
             // attackメソッドの引数に対象を入れれるようにすることで、自分自身も攻撃対象に設定可能に
             $_SESSION['human']->attack($_SESSION['monster']);
             $_SESSION['monster']->sayCry();
-            // $attackPoint = mt_rand(50,100);
-            //hp = hp - attackpoint を-=として省略
-            // セッションの中のmonsterのhpを呼び出す
-            //ランダムでモンスターに攻撃を与える
-            // $_SESSION['monster']->setHp( $_SESSION['monster']->getHp() - $attackPoint );
-            // History::set($attackPoint.'ポイントのダメージを与えた！');
-            
 
         // モンスターから攻撃を受ける(attackメソッドを使用する)
             History::set($_SESSION['monster']->getName().'の攻撃！');
             $_SESSION['monster']->attack($_SESSION['human']);
             $_SESSION['human']->sayCry();
-            // if($_SESSION['monster'] instanceof MagicMonster){ //魔法攻撃の行えるモンスターなら
-            //     if(!mt_rand(0,4)){ //5分の1の確率で魔法攻撃
-            //         $_SESSION['monster']->magicAttack();
-            //     }else{
-            //         $_SESSION['monster']->attack();
-            //     }
-            // }else{ //普通のモンスターなら普通の攻撃
-            //  $_SESSION['monster']->attack();
-            // }
-        //人が叫ぶ
-            // $_SESSION['human']->sayCry();
 
         // 自分のhpが0以下になったらゲームオーバー
             if($_SESSION['human']->getHp() <= 0){
@@ -304,10 +266,8 @@ if(!empty($_POST)){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <!-- これはOK -->
-    <!-- <link rel="stylesheet" href="./reset.css"> -->
-    <!-- これはだめ -->
-    <!-- <link rel="stylesheet" href="/reset.css"> -->
+    <!-- これはOK  <link rel="stylesheet" href="./reset.css"> -->
+    <!-- これはだめ <link rel="stylesheet" href="/reset.css"> -->
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="style.css">
     <title>ドラクエ</title>
@@ -386,12 +346,13 @@ if(!empty($_POST)){
             max: monsterMaxHpSession//初期hp
         });
     });
-    // $(function(){
-    //     $(.attack),click(function(){
-    //         $(.gameWindow).toggleClass("shock");
-    //         $(.gameWindow).fadeClass("500");
-    //     })
-    // });
+    // うまく画面を揺らしたい
+    $(function(){
+　      $(.attack).onclick(function(){
+             $(.gameWindow).toggleClass('shock')
+            // $(.gameWindow).fadeClass("500");
+        })
+    });
 </script>
 
 </html>
