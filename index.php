@@ -43,6 +43,7 @@ abstract class Creature{
         }
         // 攻撃する相手が引数で変わるようになっている
         $targetObj->setHp($targetObj->getHp()-$attackPoint);
+        // History::set($targetObj.'に'.$attackPoint.'ポイントのダメージ！');
         History::set($attackPoint.'ポイントのダメージ！');
     }
 }
@@ -73,6 +74,18 @@ class Human extends Creature{
             case Sex::WOMAN :
                 History::set('きゃっ！'); break;
         }
+    }
+    public function magicAttack($targetObj){
+        $magicAttackPoint = mt_rand($this->magicAttackMin, $this->magicAttackMax);
+        //mt_randを否定（！をつける）することでint型がboolean型に変わるので、if(mt_rand(0,9) == $int)としなくても確率の計算ができる。
+        //   0の場合だけfalseとなるのでif文の中に入る１〜９まではtrueなので、if以下には入らない
+        if(!mt_rand(0,9)){//10分の１の確率でモンスターのクリティカル
+            $magicAttackPoint *= 1.5;
+            $magicAttackPoint = (int)$magicAttackPoint;
+            History::set($this->getName().'の魔法攻撃!!');
+        }
+        $targetObj->setHp($targetObj->getHp()-$magicAttackPoint);
+        History::set($magicAttackPoint.'ポイントのダメージ！');
     }
 }
 
@@ -123,7 +136,7 @@ class MagicMonster extends Monster{
     // 魔法を使えるモンスターは自分で魔法を出すか普通に攻撃するかを判断する
     public function attack($targetObj){
         if(!mt_rand(0,4)){ //5分の1の確率で魔法攻撃
-            History::set($this->name.'の魔法攻撃!!');
+            History::set($this->name.'がメラミを唱えた!!');
             $targetObj->setHp( $targetObj->getHp() - $this->magicAttack );
             History::set($this->magicAttack.'ポイントのダメージを受けた！');
         }else{
@@ -213,6 +226,8 @@ function gameOver(){
 //1.POST送信されていた場合
 if(!empty($_POST)){
     $attackFlg = (!empty($_POST['attack'])) ? true : false;
+    $magicAttackFlg = (!empty($_POST['magicAttack'])) ? true : false;
+    // $attackFlg = (!empty( $_POST['attack'] || $_POST['magicAttack'] )) ? true : false;
     $startFlg = (!empty($_POST['start'])) ? true : false;
     error_log('POSTされた！');
 
@@ -222,17 +237,24 @@ if(!empty($_POST)){
         init();
     }else{
         // 攻撃するを押した場合
-        if($attackFlg){
-        // ランダムでモンスターに攻撃を与える
-            History::set($_SESSION['human']->getName().'の攻撃！');
-            // attackメソッドの引数に対象を入れれるようにすることで、自分自身も攻撃対象に設定可能に
-            $_SESSION['human']->attack($_SESSION['monster']);
-            $_SESSION['monster']->sayCry();
+        if($attackFlg || $magicAttackFlg){
+            if($magicAttackFlg){
+            // 魔法攻撃を与える
+                History::set($_SESSION['human']->getName().'の魔法攻撃！');
+                $_SESSION['human']->magicAttack($_SESSION['monster']);
+                // $_SESSION['monster']->sayCry();
+            }else{
+            //通常攻撃
+                History::set($_SESSION['human']->getName().'の攻撃！');
+                // attackメソッドの引数に対象を入れることで、自分自身も攻撃対象に設定可能に
+                $_SESSION['human']->attack($_SESSION['monster']);
+                // $_SESSION['monster']->sayCry();
+            }
 
         // モンスターから攻撃を受ける(attackメソッドを使用する)
             History::set($_SESSION['monster']->getName().'の攻撃！');
             $_SESSION['monster']->attack($_SESSION['human']);
-            $_SESSION['human']->sayCry();
+            // $_SESSION['human']->sayCry();
 
         // 自分のhpが0以下になったらゲームオーバー
             if($_SESSION['human']->getHp() <= 0){
@@ -301,7 +323,7 @@ if(!empty($_POST)){
             <form method="post">
                 <input type="submit" class="attack" name="attack" value="▶ 通常攻撃">
                 <input type="submit" name="specialAttack" value="▶ 必殺技">
-                <input type="submit" name="magicalAttack" value="▶ 魔法攻撃">
+                <input type="submit" name="magicAttack" value="▶ 魔法攻撃">
                 <input type="submit" name="escape" value="▶ 逃げる">
             </form>
             <p class="monsterCount">倒したモンスター数：<?php echo $_SESSION['knockDownCount']; ?></p>
@@ -347,12 +369,12 @@ if(!empty($_POST)){
         });
     });
     // うまく画面を揺らしたい
-    $(function(){
-　      $(.attack).onclick(function(){
-             $(.gameWindow).toggleClass('shock')
-            // $(.gameWindow).fadeClass("500");
-        })
-    });
+//     $(function(){
+// 　      $(.attack).onclick(function(){
+//              $(.gameWindow).toggleClass('shock')
+//             // $(.gameWindow).fadeClass("500");
+//         })
+//     });
 </script>
 
 </html>
